@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165.78" height="96.72" viewBox="0 0 165.78 96.72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1016" data-name="Rectangle 1016" width="165.78" height="96.72" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="SOUTH_AFRICA" data-name="SOUTH AFRICA" transform="translate(-252.051 -561.391)">
+    <g id="Group_220" data-name="Group 220" transform="translate(252.051 561.391)">
+      <g id="Group_219" data-name="Group 219">
+        <rect id="Rectangle_1015" data-name="Rectangle 1015" width="165.78" height="96.72" fill="#fff"/>
+        <g id="Group_218" data-name="Group 218" clip-path="url(#clip-path)">
+          <path id="Path_10189" data-name="Path 10189" d="M257.932,561.39l48.355,32.227h88.375V561.39Z" transform="translate(-228.882 -561.39)" fill="#d03033"/>
+          <path id="Path_10190" data-name="Path 10190" d="M277.393,574.36h78.7v-6.446H267.721Z" transform="translate(-190.316 -535.687)" fill="#fff"/>
+          <path id="Path_10191" data-name="Path 10191" d="M267.721,579.6H356.1v-6.465h-78.7Z" transform="translate(-190.316 -515.109)" fill="#fff"/>
+          <path id="Path_10192" data-name="Path 10192" d="M306.287,574.446l-48.355,32.227h136.73V574.446Z" transform="translate(-228.882 -509.953)" fill="#1f189b"/>
+          <path id="Path_10193" data-name="Path 10193" d="M252.051,578.18h19.286l-19.286-12.872Z" transform="translate(-252.051 -545.953)"/>
+          <path id="Path_10194" data-name="Path 10194" d="M252.051,567.914V600.18h19.286l24.182-16.152-24.182-16.113Z" transform="translate(-252.051 -535.687)"/>
+          <path id="Path_10195" data-name="Path 10195" d="M252.051,574.446V587.3l19.286-12.852Z" transform="translate(-252.051 -509.953)"/>
+          <path id="Path_10196" data-name="Path 10196" d="M252.051,571.48l43.469,28.985-43.469,29v7.739l55.094-36.743-55.094-36.724Z" transform="translate(-252.051 -552.125)" fill="#f2b126"/>
+          <path id="Path_10197" data-name="Path 10197" d="M252.051,561.39v11.617l55.094,36.724-55.094,36.743v11.637H269.48l58.028-38.692h90.324V600.063H327.507L269.48,561.39Z" transform="translate(-252.051 -561.39)" fill="#32784c"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

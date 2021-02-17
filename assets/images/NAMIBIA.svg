@@ -1,0 +1,32 @@
+<svg id="NAMIBIA" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165.782" height="96.716" viewBox="0 0 165.782 96.716">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_75" data-name="Rectangle 75" width="165.782" height="96.716" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_100" data-name="Group 100" transform="translate(0 0)">
+    <g id="Group_99" data-name="Group 99">
+      <g id="Group_98" data-name="Group 98" clip-path="url(#clip-path)">
+        <path id="Path_3607" data-name="Path 3607" d="M722.922,564.4v96.716L888.7,564.4Z" transform="translate(-722.922 -564.402)" fill="#1f357e"/>
+        <path id="Path_3608" data-name="Path 3608" d="M888.7,564.4,722.922,661.119H888.7Z" transform="translate(-722.922 -564.402)" fill="#3d9546"/>
+        <g id="Group_95" data-name="Group 95">
+          <g id="Group_94" data-name="Group 94" clip-path="url(#clip-path)">
+            <g id="Group_92" data-name="Group 92" transform="translate(-8.682 -14.878)">
+              <path id="Path_3609" data-name="Path 3609" d="M738.53,687.862l-17.365-29.755,165.782-96.716,17.365,29.776-165.782,96.7Z" transform="translate(-721.164 -561.391)" fill="#fff"/>
+            </g>
+            <g id="Group_93" data-name="Group 93" transform="translate(-6.512 -11.134)">
+              <path id="Path_3610" data-name="Path 3610" d="M734.627,681.171,721.6,658.826l165.773-96.678,13.043,22.288L734.627,681.171Z" transform="translate(-721.604 -562.148)" fill="#c0003b"/>
+            </g>
+          </g>
+        </g>
+        <path id="Path_3611" data-name="Path 3611" d="M756.814,590.706l-7.111-1.216,1.216,7.1-5.547-4.612-2.508,6.773-2.509-6.773-5.557,4.612,1.225-7.1-7.12,1.216,4.612-5.557-6.773-2.508,6.773-2.529-4.612-5.557,7.12,1.255-1.225-7.121,5.557,4.612,2.509-6.773,2.508,6.773,5.547-4.612L749.7,575.81l7.111-1.255-4.612,5.557,6.782,2.529-6.782,2.508Z" transform="translate(-707.872 -556.03)" fill="#f5cd28"/>
+        <g id="Group_97" data-name="Group 97">
+          <g id="Group_96" data-name="Group 96" clip-path="url(#clip-path)">
+            <path id="Path_3612" data-name="Path 3612" d="M747.39,577.5a9.672,9.672,0,1,1-9.667-9.668,9.666,9.666,0,0,1,9.667,9.668" transform="translate(-702.732 -550.889)" fill="#1f357e"/>
+            <path id="Path_3613" data-name="Path 3613" d="M744.5,576.239a8.061,8.061,0,1,1-8.056-8.087,8.064,8.064,0,0,1,8.056,8.087" transform="translate(-701.447 -549.629)" fill="#f5cd28"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

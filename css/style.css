@@ -1,0 +1,707 @@
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar-toggler img {
+    height: 2rem;
+}
+
+.navbar-brand img {
+    height: 5rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    opacity: 1;
+    transition: opacity 100ms ease-in;
+}
+
+.nav-link.black {
+    color: #000000;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    opacity: 0.7;
+    transition: opacity 100ms ease-in;
+}
+
+.nav-link.black:hover {
+    color: #000000;
+}
+
+.btn-primary {
+    background-color: #06AEF4;
+    border-color: #06AEF4;
+    padding: 10px 40px;
+    color: #ffffff;
+    border-width: 2px;
+    border-radius: 50px;
+}
+
+.btn-primary.inverted {
+    background-color: #08FABF;
+    border-color: #08FABF;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: #06AEF4;
+    color: #cdeffd;
+    padding: 10px 40px;
+}
+
+.btn-primary.light-bg-hover:hover {
+    background-color: transparent;
+    border-color: #06AEF4;
+    color: #06AEF4;
+    padding: 10px 40px;
+}
+
+.btn-primary.inverted:hover {
+    color: #06AEF4;
+}
+
+.banner {
+    min-height: 115vh;
+    width: 100%;
+    background-image: url("../assets/images/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+}
+
+.banner h2, .courses-banner h2 {
+    font-size: 3.28125rem;
+    font-weight: 600;
+}
+
+.banner-map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    z-index: 9;
+}
+
+.banner-content-wrapper {
+    position: relative;
+    z-index: 999;
+    max-width: 400px;
+}
+
+.graduates-work {
+    padding: 5rem 0 6rem;
+    min-height: 360px;
+    background-image: url("../assets/images/section-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 999;
+}
+
+.small-heading {
+    font-weight: 600;
+    font-size: 1.640625rem;
+}
+
+.big-heading {
+    font-size: 2.34375rem;
+    font-weight: 600;
+}
+
+.big-subtitle {
+    font-size: 1.171875rem;
+    font-weight: 600;
+    color: #06AEF4;
+}
+
+.graduates-work .company {
+    width: 250px;
+    max-height: 8rem;
+}
+
+.countries {
+    background-image: url("../assets/images/country-bg@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0;
+}
+
+.countries > * {
+    position: relative;
+    z-index: 999;
+}
+
+.countries .flag {
+    width: 100%;
+}
+
+.flag-slider {
+    margin-top: 4rem;
+}
+
+.company-wrapper {
+    position: static;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 500ms ease;
+}
+
+/*.company-wrapper.active {
+    opacity: 1;
+    transition: opacity 500ms ease;
+}*/
+
+.features {
+    padding: 6rem 0;
+    background-image: url("../assets/images/section-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 999;
+}
+
+.feature-item-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 171, 251, 0.16);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.feature-item-card img {
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+.feature-item-card h6 {
+    font-size: 1.171875rem;
+    font-weight: 600;
+}
+
+.feature-item-card p {
+    margin: 0;
+    color: #343434;
+}
+
+.join-online-session , .courses-join-online-session {
+    padding: 5rem 0;
+    background-image: url("../assets/images/join-free-online@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #042343;
+}
+
+.courses-join-online-session {
+    background-image: url("../assets/images/s5-bg.png");
+}
+
+.btns-wrapper {
+    max-width: 250px;
+    margin: 0 0 0 auto;
+}
+
+.btns-wrapper a {
+    width: 100%;
+    margin: 10px;
+}
+
+.join-online-session > * {
+    position: relative;
+    z-index: 999;
+}
+
+.join-online-session p {
+    margin-bottom: 0;
+    max-width: 400px;
+}
+
+.testimonials {
+    padding: 6rem 0;
+    background-image: url("../assets/images/section-3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 999;
+}
+
+.quote-card {
+    padding: 2rem;
+    border-radius: 10px;
+    color: #343434;
+    background-color: #ffffff;
+    height: 100%;
+    border: 1px solid #06AEF4;
+    box-shadow: 0 20px 6px rgba(142,204,230, 0.16);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quote-card .quote-flag {
+    display: block;
+    height: 2.2rem;
+}
+
+.quote-card .quote-stars {
+    display: block;
+    height: 1.5rem;
+}
+
+.quote-card .quote {
+    font-size: 0.98rem;
+    margin-bottom: 0.8rem;
+}
+
+.quote-card .quote-by {
+    font-size: 0.9rem;
+}
+
+.courses-banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../assets/images/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    color: #000000;
+    align-items: center;
+}
+
+.curriculum {
+    padding: 8rem 0;
+    background-image: url("../assets/images/s3-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.target {
+    padding: 8rem 0 ;
+}
+
+.curriculum .btns-wrapper {
+    margin: 0 auto;
+}
+
+.curriculum-feature, .target-feature {
+    display: flex;
+    align-items: center;
+}
+
+.curriculum-feature img, .target-feature img {
+    width: 5.5rem;
+    display: block;
+    margin-right: 1.5rem;
+}
+
+.target-feature img {
+    width: 9.5rem;
+    margin-right: 3rem;
+}
+
+.curriculum-feature h5, .target-feature h5 {
+    font-weight: 600;
+    font-size: 1.171875rem;
+    max-width: 350px;
+}
+
+.curriculum-feature p {
+    color: #343434;
+    margin: 0;
+}
+
+.target .feature-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+    background-color: #F6F9FD;
+    z-index: 1;
+}
+
+.target .d-flex {
+    position: relative;
+    z-index: 3;
+}
+
+.target .d-flex h5 {
+    padding-left: 6rem;
+}
+
+.target-small-features-wrapper {
+    background-color: #ffffff;
+    padding: 5rem 6rem;
+}
+
+.target-small-features-wrapper .feature {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.target-small-features-wrapper .feature::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #08FABF;
+    border-radius: 50%;
+    left: -1.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.target-small-features-wrapper .feature:last-child {
+    margin-bottom: 0;
+}
+
+.mw-800 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.courses-section {
+    padding: 8rem 0;
+}
+
+.course-slider-item {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.learning-outcomes {
+    padding-bottom: 8rem;
+}
+
+.learning-outcomes .col-lg-4 {
+    margin-bottom: 13rem;
+}
+
+.learning-outcomes .col-lg-4:last-child {
+    margin-bottom: 0;
+}
+
+.outcome-item img {
+    height: 10rem;
+    display: block;
+    margin: 0 auto 1.7rem;
+}
+
+.outcome-item.down {
+    position: relative;
+    bottom: -13rem;
+}
+
+.outcome-item h5 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.application-process {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    background-image: url("../assets/images/Application Process-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.process-item {
+    text-align: left;
+    margin: 0 0 6rem;
+}
+
+.process-item h5 {
+    font-weight: 600;
+}
+
+.process-item p {
+    margin: 0;
+    max-width: 350px;
+}
+
+.process-item a {
+    color: #06AEF4;
+}
+
+.process-item .step-count {
+    color: #08FABF;
+    font-size: 7.03125rem;
+    font-weight: 700;
+    opacity: 0.2;
+    line-height: 1;
+    position: relative;
+    bottom: -2rem;
+    left: -1rem
+}
+
+.become-data-scientist {
+    padding: 6rem 0;
+}
+
+.become-data-scientist h5 {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+footer {
+    padding-top: 10rem;
+    background-image: url("../assets/images/footer@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #000000;
+}
+
+.footer-links {
+    padding: 6rem 0;
+}
+
+.footer-link {
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    opacity: 1;
+    max-width: 200px;
+    transition: opacity 100ms ease;
+}
+
+.footer-link:hover {
+    color: #000000;
+    opacity: 0.7;
+    transition: opacity 100ms ease;
+}
+
+.footer-links h5 {
+    font-size: 1.171875rem;
+    font-weight: 600;
+}
+
+.footer-logo img {
+    height: 7rem;
+    display: block;
+    margin-bottom: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-foot {
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #4E4E4E;
+}
+
+@media (max-width: 1199px) {
+    .quote-card .quote-flag {
+        height: 2rem;
+    }
+
+    .quote-card .quote-stars {
+        height: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    header:not(.white) {
+        background: linear-gradient(0deg, rgba(0,0,0,0.5116421568627452) 0%, rgba(0,0,0,1) 100%);
+    }
+
+    header.white {
+        background-color: #F6F9FD;
+    }
+
+    .banner-map {
+        width: 100%;
+    }
+    .banner-content-wrapper {
+        margin-top: 30rem;
+    }
+    .graduates-work {
+        min-height: 580px;
+    }
+
+    .courses-banner {
+        background-image: url("../assets/images/Application Process-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+        min-height: unset;
+        padding: 8rem 0 16rem;
+    }
+
+    .courses-banner .banner-content-wrapper {
+        margin-top: 5rem;
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .banner {
+        min-height: 1050px;
+    }
+    .graduates-work {
+        min-height: 580px;
+    }
+
+    .btns-wrapper {
+        max-width: 100%;
+        margin: 0 0 0 auto;
+    }
+
+    .btns-wrapper a {
+        width: max-content;
+        margin: 10px;
+    }
+
+    .target .d-flex h5 {
+        padding-left: 0;
+    }
+
+    .target-small-features-wrapper {
+        background-color: #ffffff;
+        padding: 5rem 6rem 5rem 2rem;
+    }
+
+    .outcome-item.down {
+        bottom: 0;
+    }
+
+    .learning-outcomes .col-lg-4 {
+        margin-bottom: 4rem;
+    }
+
+    .process-item {
+        max-width: 350px;
+        margin: 0 auto 6rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .banner {
+        min-height: 850px;
+    }
+    .banner-map {
+        top: 20px;
+        width: 140%;
+    }
+    .banner-content-wrapper {
+        margin-top: 24rem;
+    }
+
+    .banner-content-wrapper h2 {
+        font-size: 2.28125rem;
+    }
+
+    .quote-card {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .quote-flag {
+        margin: 0 auto 1rem;
+    }
+
+    .feature-item-card {
+        box-shadow: none;
+        background-color: transparent;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .feature-item-card h6 {
+        position: relative;
+    }
+
+    .feature-item-card h6::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -1rem;
+        width: 2px;
+        height: 100%;
+        background-color: #08FABF;
+        content: "";
+    }
+
+    .feature-item-card img {
+        margin-left: 0;
+        height: 3rem;
+    }
+
+    .quote-images {
+        flex-flow: column-reverse;
+    }
+
+    .courses-banner {
+        padding: 8rem 0 24rem;
+    }
+
+    .courses-banner .big-subtitle {
+        max-width: 250px;
+    }
+
+    .curriculum {
+        background-position: left;
+    }
+
+    .target-feature img {
+        width: 4.5rem;
+        margin-right: 1rem;
+    }
+
+    .target-small-features-wrapper {
+        padding-right: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .process-item .step-count {
+        left: 1rem;
+    }
+
+    .big-heading {
+        font-size: 1.74375rem;
+    }
+}

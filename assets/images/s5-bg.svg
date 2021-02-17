@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="361" viewBox="0 0 1920 361">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1027" data-name="Rectangle 1027" width="1920" height="361" transform="translate(0 3818)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1008" data-name="Rectangle 1008" width="1920" height="361" transform="translate(0 4192)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1.036" y1="0.519" x2="-0.061" y2="0.809" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#06aef4"/>
+      <stop offset="1" stop-color="#00ffbf"/>
+    </linearGradient>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_993" data-name="Rectangle 993" width="641" height="281" transform="translate(-71 3909)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00abfb"/>
+      <stop offset="1" stop-color="#00ffbf"/>
+    </linearGradient>
+  </defs>
+  <g id="s5-bg" transform="translate(0 -3818)" clip-path="url(#clip-path)">
+    <g id="Group_285" data-name="Group 285">
+      <g id="join_a_free_online" data-name="join a free online" transform="translate(0 -374)" clip-path="url(#clip-path-2)">
+        <g id="Group_203" data-name="Group 203">
+          <rect id="Rectangle_991" data-name="Rectangle 991" width="1920" height="361" transform="translate(0 4192)" fill="#f6f9fd"/>
+          <g id="blur_object" data-name="blur object" transform="translate(0 363)">
+            <circle id="Ellipse_20" data-name="Ellipse 20" cx="127" cy="127" r="127" transform="translate(-86 3881)" fill="url(#linear-gradient)"/>
+            <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-65)" clip-path="url(#clip-path-3)">
+              <circle id="Ellipse_22" data-name="Ellipse 22" cx="141" cy="141" r="141" transform="translate(262.379 3985.355) rotate(50)" fill="url(#linear-gradient)"/>
+            </g>
+          </g>
+          <g id="Group_194" data-name="Group 194" transform="translate(1319.99 4477.495)" opacity="0.395">
+            <path id="Path_10137" data-name="Path 10137" d="M190.452,180.505a10.014,10.014,0,1,1,10.015-10.012A10.025,10.025,0,0,1,190.452,180.505Zm0-16.337a6.323,6.323,0,1,0,6.325,6.325A6.332,6.332,0,0,0,190.452,164.168Z" transform="translate(-180.437 -160.478)" fill="url(#linear-gradient-3)"/>
+          </g>
+          <g id="Group_193" data-name="Group 193" transform="translate(1004.084 4281.109)" opacity="0.395">
+            <path id="Path_10137-2" data-name="Path 10137" d="M189.524,178.649a9.086,9.086,0,1,1,9.087-9.084A9.1,9.1,0,0,1,189.524,178.649Zm0-14.823a5.737,5.737,0,1,0,5.739,5.739A5.745,5.745,0,0,0,189.524,163.826Z" transform="translate(-180.437 -160.478)" fill="url(#linear-gradient-3)"/>
+          </g>
+        </g>
+      </g>
+      <g id="blur_object-2" data-name="blur object" transform="translate(1838 -11)">
+        <circle id="Ellipse_20-2" data-name="Ellipse 20" cx="127" cy="127" r="127" transform="translate(-86 3881)" fill="url(#linear-gradient)"/>
+        <g id="Mask_Group_3-2" data-name="Mask Group 3" transform="translate(-65)" clip-path="url(#clip-path-3)">
+          <circle id="Ellipse_22-2" data-name="Ellipse 22" cx="141" cy="141" r="141" transform="translate(262.379 3985.355) rotate(50)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

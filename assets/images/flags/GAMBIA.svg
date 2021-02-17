@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165.78" height="96.72" viewBox="0 0 165.78 96.72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1038" data-name="Rectangle 1038" width="165.78" height="96.72" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="GAMBIA" transform="translate(-267.687 -643.762)">
+    <g id="Group_253" data-name="Group 253" transform="translate(267.686 643.762)">
+      <g id="Group_252" data-name="Group 252">
+        <g id="Group_251" data-name="Group 251" clip-path="url(#clip-path)">
+          <rect id="Rectangle_1035" data-name="Rectangle 1035" width="165.78" height="32.247" fill="#bc0030"/>
+          <path id="Path_10291" data-name="Path 10291" d="M328.421,650.289H267.686v32.246h165.78V650.289H328.421" transform="translate(-267.686 -618.042)" fill="#fff"/>
+          <rect id="Rectangle_1036" data-name="Rectangle 1036" width="165.78" height="21.498" transform="translate(0 37.631)" fill="#201688"/>
+          <rect id="Rectangle_1037" data-name="Rectangle 1037" width="165.78" height="32.227" transform="translate(0 64.493)" fill="#48782e"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

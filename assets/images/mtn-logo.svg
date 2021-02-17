@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143" height="143" viewBox="0 0 143 143">
+  <g id="mtn-logo" transform="translate(0.4 0.4)">
+    <rect id="Rectangle_4491" width="143" height="143" transform="translate(-0.4 -0.4)" fill="#fff"/>
+    <path id="Path_2325" d="M1.9,1.9H129.881V129.881H1.9Z" transform="translate(5.402 5.402)" fill="#fc0"/>
+    <path id="Path_1250" d="M63.139,61.962c33.436,0,60.339-11.145,60.339-24.981S96.576,12,63.139,12,2.8,23.145,2.8,36.981,29.7,61.962,63.139,61.962" transform="translate(7.961 34.119)" fill="#00678f"/>
+    <path id="Path_1251" d="M37.854,21.449,39.391,15.3H18.637L17.1,21.449h6.918L20.559,34.9h7.3L31.32,21.449Z" transform="translate(48.62 43.502)" fill="#fc0"/>
+    <path id="Path_1252" d="M41.452,15.3H31.075L24.542,29.9V15.3H14.549L8.4,40.281h6.918l4.228-16.142V40.281h5.381l7.687-16.142L28.769,40.281H35.3Z" transform="translate(23.883 43.502)" fill="#fff"/>
+    <path id="Path_1253" d="M48.218,15.3H41.685L38.226,28.367,35.151,15.3h-7.3L21.7,40.281h6.534L31.692,26.83l3.459,13.451h6.918Z" transform="translate(61.699 43.502)" fill="#fff"/>
+    <path id="Path_1254" d="M18.469,20.8,17.7,24.259h6.918l.769-3.459Z" transform="translate(50.326 59.14)" fill="red"/>
+  </g>
+</svg>

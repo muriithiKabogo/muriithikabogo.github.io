@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165.78" height="96.72" viewBox="0 0 165.78 96.72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1104" data-name="Rectangle 1104" width="165.78" height="96.72" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="MAURITIUS" transform="translate(-147.76 -605.551)">
+    <g id="Group_323" data-name="Group 323" transform="translate(147.76 605.551)">
+      <g id="Group_322" data-name="Group 322">
+        <g id="Group_321" data-name="Group 321" clip-path="url(#clip-path)">
+          <rect id="Rectangle_1100" data-name="Rectangle 1100" width="165.78" height="24.194" fill="#c9002b"/>
+          <rect id="Rectangle_1101" data-name="Rectangle 1101" width="165.78" height="24.156" transform="translate(0 24.195)" fill="#1d2984"/>
+          <rect id="Rectangle_1102" data-name="Rectangle 1102" width="165.78" height="24.195" transform="translate(0 48.35)" fill="#f6ec2e"/>
+          <rect id="Rectangle_1103" data-name="Rectangle 1103" width="165.78" height="24.175" transform="translate(0 72.545)" fill="#419254"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

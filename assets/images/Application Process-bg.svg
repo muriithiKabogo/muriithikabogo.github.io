@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="989" viewBox="0 0 1920 989">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1028" data-name="Rectangle 1028" width="1920" height="989" transform="translate(0 6658)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1.036" y1="0.519" x2="-0.061" y2="0.809" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#06aef4"/>
+      <stop offset="1" stop-color="#00ffbf"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_993" data-name="Rectangle 993" width="641" height="281" transform="translate(-71 3909)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Application_Process-bg" data-name="Application Process-bg" transform="translate(0 -6658)" clip-path="url(#clip-path)">
+    <g id="Group_286" data-name="Group 286">
+      <path id="Path_10282" data-name="Path 10282" d="M-23.032-137.749h1923.4V701.945L-23.032,846.822Z" transform="translate(23.032 6796)" fill="#f6f9fd"/>
+      <g id="blur_object" data-name="blur object" transform="matrix(0.998, -0.07, 0.07, 0.998, -298.053, 3457.7)">
+        <circle id="Ellipse_20" data-name="Ellipse 20" cx="127" cy="127" r="127" transform="translate(-86 3881)" fill="url(#linear-gradient)"/>
+        <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-65)" clip-path="url(#clip-path-2)">
+          <circle id="Ellipse_22" data-name="Ellipse 22" cx="141" cy="141" r="141" transform="translate(262.379 3985.355) rotate(50)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

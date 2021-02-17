@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="209.009" height="199.341" viewBox="0 0 209.009 199.341">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00abfb"/>
+      <stop offset="1" stop-color="#00ffbf"/>
+    </linearGradient>
+  </defs>
+  <g id="Data_Analytic_Consultant-icon" data-name="Data Analytic Consultant-icon" transform="translate(-248 -5410.167)">
+    <path id="Path_10228" data-name="Path 10228" d="M106.587,6.857c72.478,8.943,82.635,37.377,99.026,97.409s-27.574,106.056-109.9,100.371S0,163.132,0,104.265,34.11-2.087,106.587,6.857Z" transform="translate(248 5404.397)" fill="#f6f9fd"/>
+    <g id="cloud-computing" transform="translate(309.85 5467.607)">
+      <g id="Group_250" data-name="Group 250">
+        <g id="Group_249" data-name="Group 249">
+          <path id="Path_10247" data-name="Path 10247" d="M70.8,20.336A21.242,21.242,0,0,0,30.49,11.917a11.156,11.156,0,0,0-3.579-.586A11.344,11.344,0,0,0,15.58,22.661a11.173,11.173,0,0,0,.361,2.837,15.58,15.58,0,1,0-.361,31.156H66.568A18.4,18.4,0,0,0,70.8,20.336ZM66.568,53.821H15.58a12.747,12.747,0,1,1,2.248-25.283,1.416,1.416,0,0,0,1.51-2.037,8.409,8.409,0,0,1-.925-3.84,8.507,8.507,0,0,1,8.5-8.5,8.39,8.39,0,0,1,3.694.857,1.418,1.418,0,0,0,1.928-.739,18.408,18.408,0,0,1,35.45,6.992c0,.028-.01.174-.01.2A1.417,1.417,0,0,0,69.155,22.9a15.57,15.57,0,0,1-2.586,30.926Z" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_252" data-name="Group 252" transform="translate(48.156 19.829)">
+        <g id="Group_251" data-name="Group 251">
+          <path id="Path_10248" data-name="Path 10248" d="M308.546,119.467a18.434,18.434,0,0,0-18.412,18.412,1.416,1.416,0,1,0,2.833,0,15.58,15.58,0,1,1,31.16,0,1.416,1.416,0,0,0,2.833,0A18.434,18.434,0,0,0,308.546,119.467Z" transform="translate(-290.134 -119.467)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_254" data-name="Group 254" transform="translate(28.327)">
+        <g id="Group_253" data-name="Group 253">
+          <path id="Path_10249" data-name="Path 10249" d="M191.912,0a21.259,21.259,0,0,0-19.851,28.83,1.414,1.414,0,0,0,1.323.912,1.448,1.448,0,0,0,.507-.092,1.416,1.416,0,0,0,.817-1.828,18.426,18.426,0,0,1,17.2-24.988,1.416,1.416,0,0,0,0-2.833Z" transform="translate(-170.667)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_256" data-name="Group 256" transform="translate(36.825 73.65)">
+        <g id="Group_255" data-name="Group 255">
+          <path id="Path_10250" data-name="Path 10250" d="M227.532,443.733A5.665,5.665,0,1,0,233.2,449.4,5.671,5.671,0,0,0,227.532,443.733Zm0,8.5a2.833,2.833,0,1,1,2.833-2.833A2.836,2.836,0,0,1,227.532,452.231Z" transform="translate(-221.867 -443.733)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_258" data-name="Group 258" transform="translate(9.915 72.234)">
+        <g id="Group_257" data-name="Group 257">
+          <path id="Path_10251" data-name="Path 10251" d="M65.4,435.2a5.665,5.665,0,1,0,5.665,5.665A5.671,5.671,0,0,0,65.4,435.2Zm0,8.5a2.833,2.833,0,1,1,2.833-2.833A2.836,2.836,0,0,1,65.4,443.7Z" transform="translate(-59.734 -435.2)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_260" data-name="Group 260" transform="translate(41.074 53.821)">
+        <g id="Group_259" data-name="Group 259">
+          <path id="Path_10252" data-name="Path 10252" d="M248.883,324.267a1.416,1.416,0,0,0-1.416,1.416v19.829a1.416,1.416,0,0,0,2.833,0V325.683A1.416,1.416,0,0,0,248.883,324.267Z" transform="translate(-247.467 -324.267)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_262" data-name="Group 262" transform="translate(0 59.487)">
+        <g id="Group_261" data-name="Group 261">
+          <path id="Path_10253" data-name="Path 10253" d="M5.665,358.4a5.665,5.665,0,1,0,5.665,5.665A5.671,5.671,0,0,0,5.665,358.4Zm0,8.5A2.833,2.833,0,1,1,8.5,364.065,2.836,2.836,0,0,1,5.665,366.9Z" transform="translate(0 -358.4)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_264" data-name="Group 264" transform="translate(8.498 53.821)">
+        <g id="Group_263" data-name="Group 263">
+          <path id="Path_10254" data-name="Path 10254" d="M63.948,324.267a1.416,1.416,0,0,0-1.416,1.416,9.926,9.926,0,0,1-9.914,9.914,1.416,1.416,0,1,0,0,2.833,12.762,12.762,0,0,0,12.747-12.747A1.416,1.416,0,0,0,63.948,324.267Z" transform="translate(-51.201 -324.267)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_266" data-name="Group 266" transform="translate(18.413 53.821)">
+        <g id="Group_265" data-name="Group 265">
+          <path id="Path_10255" data-name="Path 10255" d="M125.1,324.267a1.416,1.416,0,0,0-1.416,1.416V335.6a11.344,11.344,0,0,1-11.331,11.331,1.416,1.416,0,1,0,0,2.833A14.18,14.18,0,0,0,126.514,335.6v-9.914A1.416,1.416,0,0,0,125.1,324.267Z" transform="translate(-110.934 -324.267)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_268" data-name="Group 268" transform="translate(63.736 72.234)">
+        <g id="Group_267" data-name="Group 267">
+          <path id="Path_10256" data-name="Path 10256" d="M389.665,435.2a5.665,5.665,0,1,0,5.665,5.665A5.671,5.671,0,0,0,389.665,435.2Zm0,8.5a2.833,2.833,0,1,1,2.833-2.833A2.836,2.836,0,0,1,389.665,443.7Z" transform="translate(-384 -435.2)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_270" data-name="Group 270" transform="translate(73.65 59.487)">
+        <g id="Group_269" data-name="Group 269">
+          <path id="Path_10257" data-name="Path 10257" d="M449.4,358.4a5.665,5.665,0,1,0,5.665,5.665A5.671,5.671,0,0,0,449.4,358.4Zm0,8.5a2.833,2.833,0,1,1,2.833-2.833A2.836,2.836,0,0,1,449.4,366.9Z" transform="translate(-443.734 -358.4)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_272" data-name="Group 272" transform="translate(62.319 53.821)">
+        <g id="Group_271" data-name="Group 271">
+          <path id="Path_10258" data-name="Path 10258" d="M388.215,335.6a9.926,9.926,0,0,1-9.914-9.914,1.416,1.416,0,0,0-2.833,0,12.762,12.762,0,0,0,12.747,12.747,1.416,1.416,0,0,0,0-2.833Z" transform="translate(-375.468 -324.267)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_274" data-name="Group 274" transform="translate(50.988 53.821)">
+        <g id="Group_273" data-name="Group 273">
+          <path id="Path_10259" data-name="Path 10259" d="M321.363,346.928A11.344,11.344,0,0,1,310.033,335.6v-9.914a1.416,1.416,0,1,0-2.833,0V335.6a14.179,14.179,0,0,0,14.163,14.163,1.416,1.416,0,1,0,0-2.833Z" transform="translate(-307.2 -324.267)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
