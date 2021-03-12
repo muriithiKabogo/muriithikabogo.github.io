@@ -84,6 +84,7 @@ header {
 .banner {
     min-height: 115vh;
     width: 100%;
+    background-color: #000000;
     background-image: url("../assets/images/banner.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,6 +127,11 @@ header {
     z-index: 999;
 }
 
+.bg-light-blue {
+    background-color: #F6F9FD;
+    padding: 10rem 0;
+}
+
 .small-heading {
     font-weight: 600;
     font-size: 1.640625rem;
@@ -153,6 +159,105 @@ header {
     background-size: cover;
     background-position: center;
     padding: 15rem 0;
+}
+
+.why-hire {
+    background-image: url("../assets/images/hire/bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0;
+}
+
+.partnership-process {
+    background-image: url("../assets/images/hire/bg-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0;
+}
+
+.partnership-process-item {
+    text-align: center !important;
+    position: relative;
+}
+
+.partnership-process-item .position-relative {
+    margin: 0 auto;
+    max-width: max-content;
+}
+
+.partnership-process-item .step-count {
+    position: absolute !important;
+    top: -4rem;
+    right: -3rem;
+    bottom: unset !important;
+    left: unset !important;
+}
+
+.partnership-process-item .step-count.left {
+    left: -3rem !important;
+    bottom: unset !important;
+    right: unset !important;
+}
+
+.partnership-process-item img {
+    height: 8rem;
+}
+
+.partnership-process-item p {
+    margin: 0 auto !important;
+}
+
+.partnership-process .col-lg-6 {
+    border-right: 1px dashed #00FFBF;
+}
+
+.partnership-process .col-lg-6.offset-lg-6 {
+    border-left: 1px dashed #00FFBF;
+    border-right: 0;
+    margin-left: calc(50% - 1px);
+}
+
+.partnership-process-item::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    border-top: 1px dashed #00FFBF;
+}
+
+.partnership-process-item.right::after{
+    left: 0;
+    right: unset;
+}
+
+.accelerate-hiring {
+    background-image: url("../assets/images/hire/bg-5.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.recruit {
+    background-image: url("../assets/images/hire/bg-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.why-hire .big-heading, .recruit .big-heading {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-bg {
+    background: none;
+    padding: 10rem 0;
 }
 
 .countries > * {
@@ -507,6 +612,10 @@ footer {
     transition: opacity 100ms ease;
 }
 
+.footer-link.address {
+    max-width: 300px;
+}
+
 .footer-link:hover {
     color: #000000;
     opacity: 0.7;
@@ -616,6 +725,42 @@ footer {
         max-width: 350px;
         margin: 0 auto 6rem;
     }
+
+    .partnership-process .col-lg-6 {
+        border-right: 0;
+    }
+
+    .partnership-process .col-lg-6.offset-lg-6 {
+        border-left: 0;
+        border-right: 0;
+        margin-left: 0;
+    }
+
+    .partnership-process-item::after{
+        content: none;
+    }
+
+    .partnership-process-item .step-count {
+        position: absolute !important;
+        top: -4rem;
+        left: 0;
+        right: unset !important;
+    }
+
+    .partnership-process-item .step-count.left {
+        right: unset !important;
+        left: 0 !important;
+    }
+
+    .partnership-process-item .step-count.last {
+        right: unset !important;
+        left: -3rem !important;
+    }
+
+    .accelerate-hiring {
+        padding: 2rem 0 0 !important;
+    }
+
 }
 
 
