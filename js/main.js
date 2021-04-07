@@ -23,13 +23,3 @@ const flagSlider = new Swiper('.flag-slider', {
   }
 });
 
-const heroImages = document.querySelectorAll(".company-wrapper");
-
-let currentImage = 1;
-let lastImage = 0;
-setInterval(() => {
-  heroImages[lastImage].classList.remove("active");
-  heroImages[currentImage].classList.add("active");
-  lastImage = currentImage;
-  currentImage = ((currentImage + 1) >= heroImages.length)? 0 : (currentImage + 1);
-}, 4000);

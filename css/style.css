@@ -116,6 +116,11 @@ header {
     max-width: 400px;
 }
 
+.mw-85 {
+    max-width: 185px;
+    margin: 0 auto;
+}
+
 .graduates-work {
     padding: 5rem 0 6rem;
     min-height: 360px;
@@ -125,6 +130,30 @@ header {
     background-position: center;
     position: relative;
     z-index: 999;
+}
+
+.our-offers {
+    padding: 0 0 11rem;
+    min-height: 360px;
+    background-image: url("../assets/images/curve-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 999;
+}
+
+.our-offers .curriculum-feature img {
+    width: 4.5rem;
+}
+
+.mt-7 {
+    margin-top: 7rem;
+}
+
+.graduates-work.bg-light-blue {
+    background-color: #F6F9FD;
+    padding: 5rem 0 6rem;
 }
 
 .bg-light-blue {
@@ -656,6 +685,12 @@ footer {
         background: linear-gradient(0deg, rgba(0,0,0,0.5116421568627452) 0%, rgba(0,0,0,1) 100%);
     }
 
+    .our-offers {
+        background-color: #F6F9FD;
+        background-image: none;
+        padding: 5rem 0;
+    }
+
     header.white {
         background-color: #F6F9FD;
     }
@@ -687,6 +722,11 @@ footer {
 }
 
 @media (max-width: 991px) {
+
+    .mt-7 {
+        margin-top: 0;
+    }
+
     .banner {
         min-height: 1050px;
     }
@@ -765,6 +805,7 @@ footer {
 
 
 @media (max-width: 767px) {
+
     .banner {
         min-height: 850px;
     }
