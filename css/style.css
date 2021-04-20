@@ -183,7 +183,7 @@ header {
 }
 
 .countries {
-    background-image: url("../assets/images/country-bg@2x.png");
+    background-image: url("../assets/images/country-bg@2x.jp2");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -362,7 +362,7 @@ header {
 }
 
 .courses-join-online-session {
-    background-image: url("../assets/images/s5-bg.png");
+    background-image: url("../assets/images/s5-bg.jp2");
 }
 
 .btns-wrapper {
@@ -620,7 +620,7 @@ header {
 
 footer {
     padding-top: 10rem;
-    background-image: url("../assets/images/footer@2x.png");
+    background-image: url("../assets/images/footer@2x.jp2");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
