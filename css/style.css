@@ -183,7 +183,7 @@ header {
 }
 
 .countries {
-    background-image: url("../assets/images/country-bg@2x.jp2");
+    background-image: url("../assets/images/country-bg@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -362,7 +362,7 @@ header {
 }
 
 .courses-join-online-session {
-    background-image: url("../assets/images/s5-bg.jp2");
+    background-image: url("../assets/images/s5-bg.png");
 }
 
 .btns-wrapper {
@@ -429,7 +429,7 @@ header {
 .courses-banner {
     min-height: 100vh;
     width: 100%;
-    background-image: url("../assets/images/banner-bg.jp2");
+    background-image: url("../assets/images/banner-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -440,7 +440,7 @@ header {
 
 .curriculum {
     padding: 8rem 0;
-    background-image: url("../assets/images/s3-bg.jp2");
+    background-image: url("../assets/images/s3-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -573,7 +573,7 @@ header {
 .application-process {
     padding-top: 8rem;
     padding-bottom: 10rem;
-    background-image: url("../assets/images/Application-Process-bg.jp2");
+    background-image: url("../assets/images/Application Process-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -620,7 +620,7 @@ header {
 
 footer {
     padding-top: 10rem;
-    background-image: url("../assets/images/footer@2x.jp2");
+    background-image: url("../assets/images/footer@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -706,7 +706,7 @@ footer {
     }
 
     .courses-banner {
-        background-image: url("../assets/images/Application-Process-bg.jp2");
+        background-image: url("../assets/images/Application Process-bg.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom left;
