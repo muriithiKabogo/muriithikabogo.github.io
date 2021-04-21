@@ -362,7 +362,7 @@ header {
 }
 
 .courses-join-online-session {
-    background-image: url("../assets/images/s5-bg.png");
+    background-image: url("../assets/images/s5-bg-min.png");
 }
 
 .btns-wrapper {
@@ -573,7 +573,7 @@ header {
 .application-process {
     padding-top: 8rem;
     padding-bottom: 10rem;
-    background-image: url("../assets/images/Application Process-bg.png");
+    background-image: url("../assets/images/Application Process-bg-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
