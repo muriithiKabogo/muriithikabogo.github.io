@@ -183,7 +183,7 @@ header {
 }
 
 .countries {
-    background-image: url("../assets/images/country-bg@2x.png");
+    background-image: url("../assets/images/country-bg@2x-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -354,7 +354,7 @@ header {
 
 .join-online-session , .courses-join-online-session {
     padding: 5rem 0;
-    background-image: url("../assets/images/join-free-online@2x.png");
+    background-image: url("../assets/images/join-free-online@2x-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
