@@ -46,7 +46,9 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '132270288832695'); 
-fbq('track', 'PageView');
+ setTimeout(function(){
+    fbq('track', 'PageView');
+  }, 3000);
 </script>
 <noscript>
  <img height="1" width="1" 
