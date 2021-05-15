@@ -1,0 +1,21 @@
+<svg id="_1-1" data-name="1-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.99" height="80.99" viewBox="0 0 80.99 80.99">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00abfb"/>
+      <stop offset="1" stop-color="#00ffbf"/>
+    </linearGradient>
+  </defs>
+  <g id="XMLID_971_" transform="translate(0)">
+    <g id="XMLID_977_">
+      <path id="XMLID_1030_" d="M72.349,15.492h2.5a1.581,1.581,0,0,0,0-3.162H68.844a1.581,1.581,0,0,0-1.581,1.581v6.007a1.581,1.581,0,1,0,3.162,0V18.179A37.334,37.334,0,1,1,40.5,3.162a37.9,37.9,0,0,1,4.555.275A1.581,1.581,0,0,0,45.431.3,41.07,41.07,0,0,0,40.5,0,40.5,40.5,0,0,0,11.861,69.129,40.495,40.495,0,0,0,72.349,15.492Z" transform="translate(0)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_1029_" d="M72.022,78.748a1.581,1.581,0,0,0-2.181.49,30.185,30.185,0,1,0,9.448-9.429,1.581,1.581,0,1,0,1.686,2.675,27.035,27.035,0,1,1-4.719,42A27.206,27.206,0,0,1,72.512,80.93,1.581,1.581,0,0,0,72.022,78.748Z" transform="translate(-54.875 -54.876)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_1028_" d="M377.75,249.492H379.7a1.581,1.581,0,0,0,0-3.162H377.75a1.581,1.581,0,0,0,0,3.162Z" transform="translate(-316.704 -207.39)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_1004_" d="M103.835,247.587a1.581,1.581,0,0,0,1.581,1.581h1.949a1.581,1.581,0,0,0,0-3.162h-1.949A1.581,1.581,0,0,0,103.835,247.587Z" transform="translate(-87.421 -207.117)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_1001_" d="M249.492,107.365v-1.949a1.581,1.581,0,1,0-3.162,0v1.949a1.581,1.581,0,1,0,3.162,0Z" transform="translate(-207.39 -87.421)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_1415_" d="M246.006,377.75V379.7a1.581,1.581,0,1,0,3.162,0V377.75a1.581,1.581,0,1,0-3.162,0Z" transform="translate(-207.117 -316.704)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_996_" d="M191.671,160.4a1.581,1.581,0,0,0-2.236,2.236l5.357,5.357a5.446,5.446,0,1,0,9.6,0l10.81-10.81a1.581,1.581,0,0,0-2.236-2.236l-10.81,10.81a5.434,5.434,0,0,0-5.132,0Zm10.208,10.159a2.284,2.284,0,1,1-2.284-2.284A2.287,2.287,0,0,1,201.879,170.556Z" transform="translate(-159.099 -130.061)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_980_" d="M120.876,120.876a1.58,1.58,0,1,0-1.118.463A1.587,1.587,0,0,0,120.876,120.876Z" transform="translate(-99.496 -99.496)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_979_" d="M317.019,13.04a1.582,1.582,0,1,0-1.117-.463A1.587,1.587,0,0,0,317.019,13.04Z" transform="translate(-265.573 -8.316)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

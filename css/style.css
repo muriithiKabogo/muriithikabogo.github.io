@@ -183,7 +183,7 @@ header {
 }
 
 .countries {
-    background-image: url("../assets/images/country-bg@2x-min.png");
+    background-image: url("../assets/images/country-bg@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -313,11 +313,6 @@ header {
     transition: opacity 500ms ease;
 }
 
-/*.company-wrapper.active {
-    opacity: 1;
-    transition: opacity 500ms ease;
-}*/
-
 .features {
     padding: 6rem 0;
     background-image: url("../assets/images/section-2.svg");
@@ -354,15 +349,63 @@ header {
 
 .join-online-session , .courses-join-online-session {
     padding: 5rem 0;
-    background-image: url("../assets/images/join-free-online@2x-min.png");
+    background-image: url("../assets/images/join-free-online@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: #042343;
 }
 
+.course-detail {
+    padding-top: 18rem;
+    padding-bottom: 8rem;
+    background-image: url("../assets/images/blockchain/3rd-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #000000;
+}
+
+.course-card {
+    border: 1px solid #00FFBF;
+    border-radius: 10px;
+    height: 100%;
+    padding: 3rem 1.5rem;
+    box-shadow: 1px 1px 0 rgba(0, 171, 251, 0.16);
+}
+
+.course-card h5 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.640625rem;
+    margin-bottom: 2rem;
+}
+
+.course-detail-item {
+    display: flex;
+    align-items: center;
+}
+
+.course-detail-item img {
+    display: block;
+    margin-right: 1rem;
+    width: 4rem;
+}
+
+.course-detail-item p {
+    margin: 0;
+}
+
+.course-card.half:first-child {
+    margin-bottom: 20px;
+}
+
+.course-card.half {
+    height: calc(50% - 10px);
+}
+
 .courses-join-online-session {
-    background-image: url("../assets/images/s5-bg-min.png");
+    background-image: url("../assets/images/s5-bg.png");
 }
 
 .btns-wrapper {
@@ -429,13 +472,43 @@ header {
 .courses-banner {
     min-height: 100vh;
     width: 100%;
-    background-image: url("../assets/images/banner-bg-min.png");
+    background-image: url("../assets/images/banner-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
     display: flex;
     color: #000000;
     align-items: center;
+}
+
+.courses-banner.blockchain-c {
+    background: #042343 !important;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.courses-banner.blockchain-c .banner-content-wrapper {
+    max-width: 550px;
+}
+
+.learning-outcomes.blockchain-c {
+    padding: 8rem 0 !important;
+}
+
+.learning-outcomes.blockchain-c .outcome-item {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.learning-outcomes.blockchain-c .outcome-item img {
+    height: 5rem;
+}
+
+.middle-graphic {
+    height: auto !important;
+    width: 100%;
+    transform: translateX(35px) scale(1.4);
+    margin: 0 !important;
 }
 
 .curriculum {
@@ -573,7 +646,15 @@ header {
 .application-process {
     padding-top: 8rem;
     padding-bottom: 10rem;
-    background-image: url("../assets/images/Application Process-bg-min.png");
+    background-image: url("../assets/images/Application Process-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.application-process.blockchain-c {
+    padding-bottom: 8rem;
+    background-image: url("../assets/images/blockchain/4th-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -620,7 +701,7 @@ header {
 
 footer {
     padding-top: 10rem;
-    background-image: url("../assets/images/footer@2x-min.png");
+    background-image: url("../assets/images/footer@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -680,6 +761,16 @@ footer {
     }
 }
 
+@media (min-width: 992px) {
+    .learning-outcomes.blockchain-c .outcome-item.down-1 {
+        bottom: -11rem !important;
+    }
+
+    .learning-outcomes.blockchain-c .outcome-item.down-2 {
+        bottom: -15rem !important;
+    }
+}
+
 @media (max-width: 991px) {
     header:not(.white) {
         background: linear-gradient(0deg, rgba(0,0,0,0.5116421568627452) 0%, rgba(0,0,0,1) 100%);
@@ -717,6 +808,26 @@ footer {
     .courses-banner .banner-content-wrapper {
         margin-top: 5rem;
         max-width: 600px;
+    }
+
+    .courses-banner.blockchain-c img {
+        opacity: 15%;
+        transform: scale(3);
+        pointer-events: none;
+    }
+
+    .learning-outcomes.blockchain-c {
+        padding-bottom: 4rem !important;
+    }
+
+    .course-card {
+        margin-top: 20px;
+        height: calc(100% - 20px) ;
+    }
+
+    .course-card.half {
+        margin-bottom: 30px;
+        height: calc(50% - 20px) ;
     }
 
 }
@@ -865,6 +976,14 @@ footer {
         padding: 8rem 0 24rem;
     }
 
+    .courses-banner.blockchain-c {
+        padding: 8rem 0;
+    }
+
+    .courses-banner.blockchain-c h2 {
+        font-size: 2.18125rem;
+    }
+
     .courses-banner .big-subtitle {
         max-width: 250px;
     }
@@ -885,6 +1004,7 @@ footer {
 
     .process-item .step-count {
         left: 1rem;
+        max-width: min-content;
     }
 
     .big-heading {
