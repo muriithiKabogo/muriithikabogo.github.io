@@ -1,4 +1,3 @@
-
 *,
 ::after,
 ::before {
@@ -12,6 +11,8 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
+
 
 header {
     position: absolute;
@@ -189,6 +190,7 @@ header {
     background-size: cover;
     background-position: center;
     padding: 15rem 0;
+    overflow: hidden;
 }
 
 .why-hire {
@@ -608,6 +610,7 @@ header {
 
 .courses-section {
     padding: 8rem 0;
+    overflow: hidden;
 }
 
 .course-slider-item {
