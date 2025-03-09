@@ -1,528 +1,2027 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Meta Info -->
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="keywords" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="description" content=""/>
-    <meta name="twitter:description" content=""/>
-    <meta property="og:url" content=""/>
-    <meta name="twitter:url" content=""/>
-    <meta itemprop="url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:title" content=""/>
-    <meta property="og:type" content="website"/>
-    <meta name="twitter:card" content="summary"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Africa Data School - Empower Your Future with Data Science</title>
+    <style>
+                      /* Reset and global styles */
+                      * {
+                          margin: 0;
+                          padding: 0;
+                          box-sizing: border-box;
+                          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                      }
 
-    <title>Courses</title>
+                      body {
+                          line-height: 1.6;
+                          color: #333;
+                          background-color: #f9f9f9;
+                      }
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link href="css/style.css" rel="stylesheet"/>
+                      /* Header and navigation */
+                     /* Header and navigation */
+   /* Header and navigation */
+   header {
+    background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+    color: white;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+  }
+
+  .logo span {
+    color: #ffce00;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin-left: 2rem;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #ffce00;
+  }
+
+  .cta-button {
+    background-color: #ffce00;
+    color: #0a2e63;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+
+  .cta-button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mobile menu toggle */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  /* Responsive styles */
+   /* Responsive styles */
+    /* Responsive styles */
+    @media (max-width: 992px) {
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
     
-    <!-- Google tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFXT7D8JNM">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    .menu-toggle {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
-  gtag('config', 'G-QFXT7D8JNM');
-</script>
+    .menu-toggle.active span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 300px;
+      height: 100vh;
+      background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+      padding: 80px 20px 20px;
+      transition: right 0.3s ease;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      z-index: 99;
+    }
+
+
+    nav.active {
+      right: 0;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul li {
+      margin: 0 0 1.5rem 0;
+      width: 100%;
+    }
+
+    nav ul li a {
+      display: block;
+      font-size: 1.1rem;
+      padding: 0.5rem 0;
+    }
+
+    nav ul li:last-child {
+      margin-top: 1rem;
+    }
+
+    nav ul li .cta-button {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.5rem;
+    }
+  }
+
+                      /* Hero section */
+                       /* Enhanced Hero Section Styles */
+          .hero {
+            position: relative;
+            padding: 7rem 0 6rem;
+            background: linear-gradient(rgba(10, 46, 99, 0.92), rgba(10, 46, 99, 0.90)),
+                        url('/api/placeholder/1200/600') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+          }
+
+          .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(26, 109, 178, 0.4) 0%, transparent 60%);
+            pointer-events: none;
+          }
+
+          .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            margin: 0 auto;
+          }
+
+          .hero-badge {
+            display: inline-block;
+            background-color: rgba(255, 206, 0, 0.9);
+            color: #0a2e63;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+
+          .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.1;
+            font-weight: 800;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+          }
+
+          .hero h1 span {
+            color: #ffce00;
+            position: relative;
+            display: inline-block;
+          }
+
+          .hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: rgba(255, 206, 0, 0.3);
+            z-index: -1;
+            border-radius: 4px;
+          }
+
+                      .hero-subtitle {
+                font-size: 1.4rem;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+                color: rgba(255, 255, 255, 0.95);
+              }
+
+              .hero-description {
+                font-size: 1.1rem;
+                max-width: 800px;
+                margin: 0 auto 2rem;
+                line-height: 1.7;
+                color: rgba(255, 255, 255, 0.9);
+              }
+
+              .hero-features {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                margin-bottom: 2.5rem;
+              }
+
+              .hero-feature {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 0.6rem 1.2rem;
+                border-radius: 50px;
+                font-weight: 600;
+              }
+
+              .hero-feature i {
+                color: #ffce00;
+              }
+
+              .hero-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 1.2rem;
+                margin-top: 1rem;
+              }
+
+              .cta-button {
+                background-color: #ffce00;
+                color: #0a2e63;
+                padding: 1rem 2rem;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 1.1rem;
+                text-decoration: none;
+                transition: all 0.3s;
+                display: inline-flex;
+                align-items: center;
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+              }
+
+              .cta-button:hover {
+                background-color: white;
+                transform: translateY(-5px);
+                box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+              }
+
+              .button-note {
+                opacity: 0.8;
+                font-size: 0.85rem;
+                font-weight: 600;
+                margin-left: 0.5rem;
+              }
+
+              .secondary-button {
+                background-color: transparent;
+                color: white;
+                border: 2px solid white;
+                padding: 1rem 2rem;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                text-decoration: none;
+                transition: all 0.3s;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+              }
+
+              .secondary-button:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-color: #ffce00;
+                color: #ffce00;
+                transform: translateY(-5px);
+              }
+
+              .secondary-button i {
+                font-size: 0.9rem;
+                transition: transform 0.3s;
+              }
+
+              .secondary-button:hover i {
+                transform: translateX(4px);
+              }
+
+              .hero-shape {
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100%;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(0 65%, 100% 0, 100% 100%, 0% 100%);
+              }
+
+              /* Responsive adjustments */
+              @media (max-width: 992px) {
+                .hero h1 {
+                  font-size: 3rem;
+                }
+
+                .hero-subtitle {
+                  font-size: 1.2rem;
+                }
+              }
+
+              @media (max-width: 768px) {
+                .hero {
+                  padding: 5rem 0 6rem;
+                }
+
+                .hero h1 {
+                  font-size: 2.5rem;
+                }
+
+                .hero-features {
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 0.8rem;
+                }
+
+                .hero-buttons {
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 1rem;
+                }
+
+                .cta-button, .secondary-button {
+                  width: 100%;
+                  justify-content: center;
+                }
+              }
+                      /* Stats Section */
+                      .stats-section {
+                          padding: 3rem 0;
+                          background-color: #0a2e63;
+                          color: white;
+                          text-align: center;
+                      }
+
+                      .stats-grid {
+                          display: grid;
+                          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                          gap: 2rem;
+                      }
+
+                      .stat-item {
+                          padding: 1.5rem;
+                      }
+
+                      .stat-number {
+                          font-size: 3rem;
+                          font-weight: 700;
+                          color: #ffce00;
+                          margin-bottom: 0.5rem;
+                          display: block;
+                      }
+
+                      .stat-label {
+                          font-size: 1.1rem;
+                      }
+
+                      /* Features section */
+                      .features {
+                          padding: 5rem 0;
+                          background-color: white;
+                      }
+
+                      .section-heading {
+                          text-align: center;
+                          margin-bottom: 3rem;
+                      }
+
+                      .section-heading h2 {
+                          font-size: 2.5rem;
+                          color: #0a2e63;
+                          margin-bottom: 1rem;
+                      }
+
+                      .section-heading p {
+                          font-size: 1.1rem;
+                          color: #666;
+                          max-width: 700px;
+                          margin: 0 auto;
+                      }
+
+                      .feature-grid {
+                          display: grid;
+                          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                          gap: 2rem;
+                      }
+
+                      .feature-card {
+                          background-color: #f9f9f9;
+                          border-radius: 10px;
+                          overflow: hidden;
+                          transition: transform 0.3s, box-shadow 0.3s;
+                          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+                      }
+
+                      .feature-card:hover {
+                          transform: translateY(-10px);
+                          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                      }
+
+                      .feature-icon {
+                          background-color: #0a2e63;
+                          color: white;
+                          font-size: 2rem;
+                          padding: 1.5rem;
+                          text-align: center;
+                      }
+
+                      .feature-content {
+                          padding: 1.5rem;
+                      }
+
+                      .feature-content h3 {
+                          color: #0a2e63;
+                          margin-bottom: 1rem;
+                          font-size: 1.4rem;
+                      }
+
+                      /* Courses section */
+                      /* Enhanced Courses Section Styles */
+                  .courses {
+                    padding: 5rem 0;
+                    background-color: #f9f9f9;
+                  }
+
+                  .course-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                    margin-top: 3rem;
+                  }
+
+                  .course-card {
+                    background-color: white;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    border-top: 5px solid #0a2e63;
+                  }
+
+                  .course-card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                  }
+
+                  .course-icon {
+                    background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+                    color: white;
+                    font-size: 2rem;
+                    padding: 1.5rem;
+                    text-align: center;
+                  }
+
+                  .course-icon i {
+                    font-size: 3rem;
+                  }
+
+                  .course-content {
+                    padding: 1.5rem;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                  }
+
+                  .course-content h3 {
+                    color: #0a2e63;
+                    margin-bottom: 0.8rem;
+                    font-size: 1.4rem;
+                    position: relative;
+                    padding-bottom: 0.8rem;
+                  }
+
+                  .course-content h3::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 50px;
+                    height: 3px;
+                    background-color: #ffce00;
+                  }
+
+                  .course-content p {
+                    color: #666;
+                    margin-bottom: 1.5rem;
+                    line-height: 1.6;
+                    flex-grow: 1;
+                  }
+
+                  .course-meta {
+                    margin-top: auto;
+                    border-top: 1px solid #eee;
+                    padding-top: 1rem;
+                  }
+
+                  .course-stats {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.8rem;
+                  }
+
+                  .course-duration, .course-projects {
+                    font-weight: 600;
+                    color: #0a2e63;
+                    font-size: 0.9rem;
+                  }
+
+                  .course-duration i, .course-projects i {
+                    margin-right: 0.3rem;
+                  }
+
+                  .course-tools-container {
+                    margin-bottom: 0.8rem;
+                  }
+
+                  .tools-label {
+                    font-weight: 600;
+                    color: #0a2e63;
+                    margin-right: 0.5rem;
+                    font-size: 0.9rem;
+                  }
+
+                  .course-tools {
+                    color: #666;
+                    font-size: 0.9rem;
+                  }
+
+                  .course-skills {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                    margin-top: 0.8rem;
+                  }
+
+                  .skill-tag {
+                    background-color: #e9f0f8;
+                    color: #0a2e63;
+                    padding: 0.3rem 0.6rem;
+                    border-radius: 50px;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                  }
+
+                  /* Add this in the head section for Font Awesome icons */
+                  @media (max-width: 768px) {
+                    .course-stats {
+                      flex-direction: column;
+                      gap: 0.5rem;
+                    }
+
+                    .course-skills {
+                      justify-content: flex-start;
+                    }
+                  }
 
 
 
-</head>
-<body>
+                      /* Countries Section */
+                      .countries-section {
+                          padding: 3rem 0;
+                          background-color: white;
+                          text-align: center;
+                      }
+
+                      .countries-heading {
+                          margin-bottom: 2rem;
+                      }
+
+                      .countries-heading h2 {
+                          font-size: 2.5rem;
+                          color: #0a2e63;
+                          margin-bottom: 1rem;
+                      }
+
+                      .countries-grid {
+                          display: grid;
+                          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                          gap: 1.5rem;
+                          max-width: 1000px;
+                          margin: 0 auto;
+                      }
+
+                      .country-item {
+                          background-color: #f9f9f9;
+                          padding: 1.5rem;
+                          border-radius: 10px;
+                          border-left: 4px solid #1a6db2;
+                          transition: transform 0.3s, box-shadow 0.3s;
+                          text-align: left;
+                      }
+
+                      .country-item:hover {
+                          transform: translateY(-5px);
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                      }
+
+                      .country-item h4 {
+                          color: #0a2e63;
+                          font-size: 1.2rem;
+                      }
+
+                      /* Projects section */
+                      .projects {
+                          padding: 5rem 0;
+                          background-color: white;
+                      }
+
+                      .project-list {
+                          display: grid;
+                          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                          gap: 1.5rem;
+                          margin-top: 2rem;
+                      }
+
+                      .project-item {
+                          background-color: #f9f9f9;
+                          padding: 1.5rem;
+                          border-radius: 10px;
+                          border-left: 4px solid #1a6db2;
+                          transition: transform 0.3s, box-shadow 0.3s;
+                      }
+
+                      .project-item:hover {
+                          transform: translateY(-5px);
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                      }
+
+                      .project-item h4 {
+                          color: #0a2e63;
+                          margin-bottom: 0.5rem;
+                      }
+
+                      .project-item p {
+                          color: #666;
+                          font-size: 0.9rem;
+                      }
+
+                      /* Testimonials section */
+
+                       /* Enhanced Testimonials Section Styles */
+      .testimonials {
+        padding: 5rem 0 6rem;
+        background-color: #f9f9f9;
+        position: relative;
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .testimonial-card {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        position: relative;
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow: hidden;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .country-flag {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-bottom-left-radius: 8px;
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .country-flag img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .testimonial-content {
+        position: relative;
+        z-index: 1;
+        padding-top: 1rem;
+      }
+
+      .testimonial-content::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        font-size: 5rem;
+        color: #f0f0f0;
+        font-family: Georgia, serif;
+        line-height: 1;
+        z-index: -1;
+      }
+
+      .testimonial-content p {
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        color: #555;
+        line-height: 1.7;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #eee;
+        padding-top: 1.2rem;
+        margin-top: 1rem;
+      }
+
+      .author-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .author-initial {
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      .author-details h4 {
+        color: #0a2e63;
+        margin-bottom: 0.2rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .country-tag {
+        background-color: #e9f0f8;
+        color: #0a2e63;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+
+      .author-details p {
+        color: #666;
+        font-size: 0.9rem;
+        margin: 0;
+        font-style: normal;
+      }
+
+      /* Countries Flags Section */
+      .countries-represented {
+        margin-top: 4rem;
+        text-align: center;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .countries-represented h3 {
+        color: #0a2e63;
+        margin-bottom: 1.5rem;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.8rem;
+      }
+
+      .countries-represented h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        height: 3px;
+        background-color: #ffce00;
+        border-radius: 2px;
+      }
+
+      .flag-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .flag-item {
+        width: 60px;
+        height: 40px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .flag-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .flag-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .more-countries {
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: #0a2e63;
+        font-size: 0.8rem;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .testimonial-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .flag-container {
+          gap: 0.8rem;
+        }
+
+        .flag-item {
+          width: 50px;
+          height: 30px;
+        }
+      }
 
 
-<header class="white">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.svg" alt="" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="assets/images/bars-solid-black.svg">
-            </button>
-            
-        </div>
-    </nav>
+                      /* Why Join Section */
+                      .why-join {
+                          padding: 5rem 0;
+                          background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+                          color: white;
+                      }
+
+                      .why-join .section-heading h2,
+                      .why-join .section-heading p {
+                          color: white;
+                      }
+
+                      .benefits-grid {
+                          display: grid;
+                          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                          gap: 2rem;
+                      }
+
+                      .benefit-card {
+                          background-color: rgba(255, 255, 255, 0.1);
+                          border-radius: 10px;
+                          padding: 2rem;
+                          transition: transform 0.3s;
+                      }
+
+                      .benefit-card:hover {
+                          transform: translateY(-10px);
+                          background-color: rgba(255, 255, 255, 0.2);
+                      }
+
+                      .benefit-icon {
+                          font-size: 2.5rem;
+                          margin-bottom: 1.5rem;
+                          display: inline-block;
+                          color: #ffce00;
+                      }
+
+                      .benefit-card h3 {
+                          margin-bottom: 1rem;
+                          font-size: 1.4rem;
+                      }
+
+                      /* CTA section */
+                       /* CTA section */
+.cta-section {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: white;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    color: #0a2e63;
+    margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.countdown {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+}
+
+.countdown h3 {
+    margin-bottom: 1rem;
+    color: #0a2e63;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.timer-item {
+    background-color: #0a2e63;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 10px;
+    min-width: 70px;
+    flex: 1;
+    max-width: 90px;
+}
+
+.timer-item .number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+}
+
+.timer-item .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.big-cta-button {
+    display: inline-block;
+    background-color: #ffce00;
+    color: #0a2e63;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 400px;
+}
+
+.big-cta-button:hover {
+    background-color: #0a2e63;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for the timer */
+/* Responsive styles for the timer */
+@media (max-width: 768px) {
+    .countdown {
+        padding: 1.5rem 1rem;
+    }
+    
+    .timer {
+        gap: 0.5rem;
+    }
+    
+    .timer-item {
+        min-width: 60px;
+        padding: 0.6rem;
+        max-width: 70px;
+    }
+    
+    .timer-item .number {
+        font-size: 1.5rem;
+    }
+    
+    .timer-item .label {
+        font-size: 0.7rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .big-cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .timer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        width: 100%;
+    }
+    
+    .timer-item {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+    }
+    
+    .timer-item .number {
+        font-size: 1.8rem;
+    }
+    
+    .timer-item .label {
+        font-size: 0.7rem;
+    }
+    
+    .countdown {
+        width: 90%;
+        padding: 1.2rem 0.8rem;
+    }
+}
+                      /* Footer */
+                      footer {
+                          background-color: #0a2e63;
+                          color: white;
+                          padding: 4rem 0 1.5rem;
+                      }
+
+                      .footer-content {
+                          display: grid;
+                          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                          gap: 2rem;
+                          margin-bottom: 2rem;
+                      }
+
+                      .footer-column h3 {
+                          color: #ffce00;
+                          margin-bottom: 1.5rem;
+                          font-size: 1.4rem;
+                      }
+
+                      .footer-column p {
+                          margin-bottom: 1rem;
+                      }
+
+                      .social-links {
+                          display: flex;
+                          gap: 1rem;
+                          margin-top: 1rem;
+                      }
+
+                      .social-link {
+                          background-color: rgba(255, 255, 255, 0.1);
+                          width: 40px;
+                          height: 40px;
+                          border-radius: 50%;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          transition: background-color 0.3s;
+                      }
+
+                      .social-link:hover {
+                          background-color: #ffce00;
+                      }
+
+                      .footer-links {
+                          list-style: none;
+                      }
+
+                      .footer-links li {
+                          margin-bottom: 0.8rem;
+                      }
+
+                      .footer-links a {
+                          color: white;
+                          text-decoration: none;
+                          transition: color 0.3s;
+                      }
+
+                      .footer-links a:hover {
+                          color: #ffce00;
+                      }
+
+                      .footer-form input {
+                          width: 100%;
+                          padding: 0.8rem;
+                          border-radius: 5px;
+                          border: none;
+                          margin-bottom: 1rem;
+                      }
+
+                      .footer-form button {
+                          background-color: #ffce00;
+                          color: #0a2e63;
+                          border: none;
+                          padding: 0.8rem 1.5rem;
+                          border-radius: 5px;
+                          cursor: pointer;
+                          font-weight: 600;
+                          transition: all 0.3s;
+                      }
+
+                      .footer-form button:hover {
+                          background-color: white;
+                      }
+
+                      .footer-bottom {
+                          text-align: center;
+                          padding-top: 2rem;
+                          border-top: 1px solid rgba(255, 255, 255, 0.1);
+                          font-size: 0.9rem;
+                      }
+
+                      /* Responsive styles */
+                      @media (max-width: 768px) {
+                          .header-content {
+                              flex-direction: column;
+                              text-align: center;
+                          }
+
+                          nav ul {
+                              margin-top: 1.5rem;
+                              flex-wrap: wrap;
+                              justify-content: center;
+                          }
+
+                          nav ul li {
+                              margin: 0.5rem;
+                          }
+
+                          .hero h1 {
+                              font-size: 2.5rem;
+                          }
+
+                          .timer-item {
+                              min-width: 60px;
+                          }
+
+                          .timer-item .number {
+                              font-size: 1.5rem;
+                          }
+
+                          .countries-grid {
+                              grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                          }
+                      }
+    </style>
+  </head>
+  <body>
+ <!-- Header -->
+ <!-- Header -->
+ <header>
+  <div class="container">
+    <div class="header-content">
+      <a href="#" class="logo">Africa <span>Data School</span></a>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#why-join">Why Us</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Success Stories</a></li>
+          <li><a href="https://www.jotform.com/250631381604551" class="cta-button">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
 
-<section class="courses-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-11 col-lg-5">
-                <div class="banner-content-wrapper">
-                    <h6 class="big-subtitle mb-3"></h6>
-                    <h2>
-                        Become a Data Scientist in 12 weeks
-                    </h2>
-                    <p class="mb-4">
-                        September intake ongoing
-                    </p>
-                </div>
-                <a href="https://www.jotform.com/242013106713542" class="btn btn-primary light-bg-hover me-lg-2 mb-2">Apply now in 3 minutes</a>
-                <!-- download syllabus -->
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">Africa's Premier Data Science Program</div>
+          <h1>Become a <span>Data Scientist</span></h1>
+          <p class="hero-subtitle">
+            Master in-demand skills that are transforming industries across
+            Africa and globally
+          </p>
+          <p class="hero-description">
+            Our immersive, hands-on program equips you with practical data
+            science and AI skills through 30+ real-world projects. Join 1000+
+            graduates who have launched successful careers in the data
+            revolution.
+          </p>
+          <div class="hero-features">
+            <div class="hero-feature">
+              <i class="fas fa-calendar-alt"></i>
+              <span>2-Month program</span>
             </div>
+            <div class="hero-feature">
+              <i class="fas fa-project-diagram"></i>
+              <span>30+ projects</span>
+            </div>
+            <div class="hero-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>1000+ graduates</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="https://www.jotform.com/250631381604551" class="cta-button"
+              >Apply Now <span class="button-note">(Limited Spots)</span></a
+            >
+            <a href="https://heytec.github.io/adsnewcoursesite/curriculum.html#" class="secondary-button"
+              >Explore Curriculum <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
+      </div>
+      <div class="hero-shape"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Real-World Projects You'll Build</h2>
+          <p>
+            Develop an impressive portfolio with projects that showcase your
+            skills to potential employers.
+          </p>
+        </div>
+        <div class="project-list">
+          <div class="project-item">
+            <h4>Stock Market Dashboard</h4>
+            <p>
+              Build an interactive visualization of stock market data using
+              Plotly.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Real Estate Price Predictor</h4>
+            <p>
+              Create a machine learning model to predict housing prices based on
+              various features.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Customer Segmentation</h4>
+            <p>
+              Use clustering algorithms to identify customer segments for
+              targeted marketing.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Sentiment Analysis</h4>
+            <p>
+              Build a model to analyze product reviews and determine customer
+              sentiment.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Data Explorer App</h4>
+            <p>
+              Create an interactive Streamlit app that allows users to explore
+              datasets visually.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Text Generation with GPT-2</h4>
+            <p>
+              Implement a generative AI model for creating coherent text
+              content.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Personal Finance Project</h4>
+            <p>
+              Analyze and visualize personal financial data for better
+              decision-making.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Customer Support Bot</h4>
+            <p>
+              Develop an AI-powered chatbot that can handle customer inquiries.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Supermarket Sales Analysis</h4>
+            <p>
+              Extract insights from retail data to improve business performance.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Plant Disease Classification</h4>
+            <p>
+              Build a deep learning model to identify diseases in plant images.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Crime Data Mapping</h4>
+            <p>
+              Visualize crime patterns across geographic regions using Folium.
+            </p>
+          </div>
+          <div class="project-item">
+            <h4>Weather Forecast App</h4>
+            <p>Develop a Python application that provides weather forecasts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+<!-- Courses Section -->
+<section class="courses" id="courses">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Our Comprehensive Curriculum</h2>
+      <p>
+        Master the full data science stack through our hands-on, project-based
+        learning approach designed for career success.
+      </p>
     </div>
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="course-content">
+          <h3>Python & Essential Programming</h3>
+          <p>
+            Master the foundation of all data science with Python programming
+            fundamentals and essential coding concepts for data manipulation.
+          </p>
+          <div class="course-meta">
+            <div class="course-stats">
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 2 Weeks</span
+              >
+              <span class="course-projects"
+                ><i class="fas fa-project-diagram"></i> 10+ Projects</span
+              >
+            </div>
+            <div class="course-tools-container">
+              <span class="tools-label">Tools:</span>
+              <span class="course-tools">VS Code, Replit, Jupyter</span>
+            </div>
+            <div class="course-skills">
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Algorithms</span>
+              <span class="skill-tag">OOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="course-content">
+          <h3>Data Analysis & Visualization</h3>
+          <p>
+            Learn to extract actionable insights, create compelling
+            visualizations, and tell powerful stories that drive business
+            decisions using real-world datasets.
+          </p>
+          <div class="course-meta">
+            <div class="course-stats">
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 2 Weeks</span
+              >
+              <span class="course-projects"
+                ><i class="fas fa-project-diagram"></i> 8+ Projects</span
+              >
+            </div>
+            <div class="course-tools-container">
+              <span class="tools-label">Tools:</span>
+              <span class="course-tools"
+                >Pandas, Matplotlib, Plotly, Seaborn</span
+              >
+            </div>
+            <div class="course-skills">
+              <span class="skill-tag">Statistical Analysis</span>
+              <span class="skill-tag">Data Cleaning</span>
+              <span class="skill-tag">Dashboard Creation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <div class="course-content">
+          <h3>Machine Learning & Deep Learning</h3>
+          <p>
+            Build predictive models that solve real business problems and drive
+            decision-making with supervised and unsupervised learning
+            techniques.
+          </p>
+          <div class="course-meta">
+            <div class="course-stats">
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 2 Weeks</span
+              >
+              <span class="course-projects"
+                ><i class="fas fa-project-diagram"></i> 7+ Projects</span
+              >
+            </div>
+            <div class="course-tools-container">
+              <span class="tools-label">Tools:</span>
+              <span class="course-tools">Scikit-learn, TensorFlow, Keras</span>
+            </div>
+            <div class="course-skills">
+              <span class="skill-tag">Classification</span>
+              <span class="skill-tag">Regression</span>
+              <span class="skill-tag">Deep Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="course-content">
+          <h3>Generative AI & Applications</h3>
+          <p>
+            Master cutting-edge technologies shaping the future of AI
+            applications, including large language models, image generation, and
+            AI agent deployment.
+          </p>
+          <div class="course-meta">
+            <div class="course-stats">
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 2 Weeks</span
+              >
+              <span class="course-projects"
+                ><i class="fas fa-project-diagram"></i> 5+ Projects</span
+              >
+            </div>
+            <div class="course-tools-container">
+              <span class="tools-label">Tools:</span>
+              <span class="course-tools"
+                >Hugging Face, LangChain, OpenAI API</span
+              >
+            </div>
+            <div class="course-skills">
+              <span class="skill-tag">LLM Fine-tuning</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">AI Agents</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Card: Interactive Dashboards -->
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-tachometer-alt"></i>
+        </div>
+        <div class="course-content">
+          <h3>Interactive Dashboards </h3>
+          <p>
+            Create powerful interactive web applications and dashboards that
+            transform your data into actionable insights using Python's most
+            popular dashboard framework.
+          </p>
+          <div class="course-meta">
+            <div class="course-stats">
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 1 Week</span
+              >
+              <span class="course-projects"
+                ><i class="fas fa-project-diagram"></i> 4+ Projects</span
+              >
+            </div>
+            <div class="course-tools-container">
+              <span class="tools-label">Tools:</span>
+              <span class="course-tools"
+                >Streamlit, Plotly, Pandas, SQLite</span
+              >
+            </div>
+            <div class="course-skills">
+              <span class="skill-tag">Interactive UI</span>
+              <span class="skill-tag">Real-time Analytics</span>
+              <span class="skill-tag">Data Apps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Card: Geospatial Data -->
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-globe-africa"></i>
+        </div>
+        <div class="course-content">
+          <h3>Geospatial Analysis & Maps</h3>
+          <p>
+            Unlock the power of location-based data with interactive maps and
+            spatial analysis techniques to reveal geographic patterns and
+            insights across the African continent.
+          </p>
+          <div class="course-meta">
+            <div class="course-stats">
+              <span class="course-duration"
+                ><i class="far fa-clock"></i> 1 Week</span
+              >
+              <span class="course-projects"
+                ><i class="fas fa-project-diagram"></i> 3+ Projects</span
+              >
+            </div>
+            <div class="course-tools-container">
+              <span class="tools-label">Tools:</span>
+              <span class="course-tools"
+                >Folium, GeoPandas, Shapely, OpenStreetMap</span
+              >
+            </div>
+            <div class="course-skills">
+              <span class="skill-tag">Choropleth Maps</span>
+              <span class="skill-tag">Geocoding</span>
+              <span class="skill-tag">Spatial Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="graduates-work">
-    <div class="container text-center">
-        <h6 class="big-subtitle mb-4">Awesome Works</h6>
-        <h5 class="big-heading mb-5">
-            Where Our Graduates Work
-        </h5>
-        <div class="position-relative">
-            <div class="company-wrapper mb-4">
-                <div class="row align-items-center ">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <img src="assets/images/Group%20196.svg" alt="nokia" class="company">
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <img src="assets/images/Group%20197.svg" alt="unicef" class="company">
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="assets/images/Group%20198.svg" alt="SA" class="company">
-                    </div>
-                </div>
-            </div>
-            <div class="company-wrapper">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <img src="assets/images/fnb-seeklogo.com%202.svg" alt="fnb" class="company">
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <img src="assets/images/mtn-logo.svg" alt="MTN" class="company">
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="assets/images/flutterwave.svg" alt="flutter wave" class="company">
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<!-- Why Join Section -->
+<section class="why-join" id="why-join">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Transform Your Future in AI</h2>
+      <p>
+        Our intensive program is designed to give you the skills,
+        confidence, and portfolio to succeed in the data-driven economy.
+      </p>
     </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">⚡</div>
+        <h3>Intensive & Practical</h3>
+        <p>
+          In only 2 Months, master data science and AI through hands-on,
+          real-world projects that employers and industries demand.
+        </p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🕒</div>
+        <h3>Perfect Schedule</h3>
+        <p>
+          Classes run every Monday, Tuesday, and Wednesday for 2 hours per
+          day—a compact, focused commitment that fits your life.
+        </p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📊</div>
+        <h3>Career-Ready Skills</h3>
+        <p>
+          Build a portfolio of 30+ projects—like predicting stock prices,
+          designing dashboards, and creating AI apps—that showcase your
+          expertise.
+        </p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🚀</div>
+        <h3>Fast-Track to Success</h3>
+        <p>
+          In just 48 hours of total instruction, go from beginner to pro
+          with tools and techniques used by top data scientists globally.
+        </p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🔨</div>
+        <h3>Learn by Doing</h3>
+        <p>
+          No endless theory—dive into coding, analyzing, and building from
+          Day 1. By the end, you'll have tangible results to share.
+        </p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🌍</div>
+        <h3>Pan-African Network</h3>
+        <p>
+          Join our community of 1000+ data professionals from 20 African
+          countries, creating a powerful network for collaboration and
+          career growth.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="countries">
-    <div class="container text-center">
-        <h5 class="small-heading mb-5">
-            Available in 20+ countries today, with many more coming soon
-        </h5>
-        <div class="swiper-container flag-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/BOTSWANA.svg" alt="BOTSWANA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/GAMBIA.svg" alt="GAMBIA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/GHANA.svg" alt="GHANA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/KENYA.svg" alt="KENYA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/LESOTHO.svg" alt="LESOTHO" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/LIBERIA.svg" alt="LIBERIA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/MALAWI.svg" alt="MALAWI" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/MAURITIUS.svg" alt="MAURITIUS" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/NAMIBIA.svg" alt="NAMIBIA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/NIGERIA.svg" alt="NIGERIA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/RWANDA.svg" alt="RWANDA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/SIERRA%20LEONE.svg" alt="SIERRA LEONE" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/SOMALIA.svg" alt="SOMALIA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/SOUTH%20AFRICA.svg" alt="SOUTH AFRICA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/SOUTH%20SUDAN.svg" alt="SOUTH SUDAN" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/SWAZILAND.svg" alt="SWAZILAND" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/TANZANIA.svg" alt="TANZANIA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/UGANDA.svg" alt="UGANDA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/ZAMBIA.svg" alt="ZAMBIA" class="flag">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/flags/ZIMBABWE.svg" alt="ZIMBABWE" class="flag">
-                </div>
-            </div>
-        </div>
+
+
+
+
+<!-- Testimonials Section -->
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Success Stories from 20 Countries</h2>
+      <p>
+        Hear from our 1000+ graduates who have transformed their careers
+        through Africa Data School.
+      </p>
     </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="country-flag">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ng.svg" alt="Nigeria Flag" />
+        </div>
+        <div class="testimonial-content">
+          <p>
+            "The wide range of access to resources."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <span class="author-initial">C</span>
+            </div>
+            <div class="author-details">
+              <h4>Okwori Al Ebah. <span class="country-tag">Nigeria</span></h4>
+              <p>Data Analyst</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="country-flag">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ke.svg" alt="Kenya Flag" />
+        </div>
+        <div class="testimonial-content">
+          <p>
+            "Instructors willingness to assist, partnerships with other organizations.."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <span class="author-initial">L</span>
+            </div>
+            <div class="author-details">
+              <h4>Linet Oundo. <span class="country-tag">Kenya</span></h4>
+              <p>Data Scientist </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="country-flag">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/za.svg" alt="South Africa Flag" />
+        </div>
+        <div class="testimonial-content">
+          <p>
+            "The course takes through almost all areas of Data Science"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <span class="author-initial">A</span>
+            </div>
+            <div class="author-details">
+              <h4>Antony Tom. <span class="country-tag">South Africa</span></h4>
+              <p>Data Scientist </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+    
+    <div class="countries-represented">
+      <h3>Our Students Come From All Across Africa</h3>
+      <div class="flag-container">
+        <div class="flag-item" title="Kenya">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ke.svg" alt="Kenya" />
+        </div>
+        <div class="flag-item" title="Nigeria">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ng.svg" alt="Nigeria" />
+        </div>
+        <div class="flag-item" title="South Africa">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/za.svg" alt="South Africa" />
+        </div>
+        <div class="flag-item" title="Ghana">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gh.svg" alt="Ghana" />
+        </div>
+        <div class="flag-item" title="Ethiopia">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/et.svg" alt="Ethiopia" />
+        </div>
+        <div class="flag-item" title="Tanzania">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/tz.svg" alt="Tanzania" />
+        </div>
+        <div class="flag-item" title="Rwanda">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/rw.svg" alt="Rwanda" />
+        </div>
+        <div class="flag-item" title="Uganda">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ug.svg" alt="Uganda" />
+        </div>
+        <div class="flag-item" title="Senegal">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sn.svg" alt="Senegal" />
+        </div>
+        <div class="flag-item" title="Ivory Coast">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ci.svg" alt="Ivory Coast" />
+        </div>
+    
+        <div class="flag-item" title="Morocco">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ma.svg" alt="Morocco" />
+        </div>
+        <div class="flag-item more-countries">
+          <span>+7 more</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="curriculum">
-    <div class="container">
-        <h5 class="small-heading mb-5">
-            Africa Data School & Microsoft Curriculum
-        </h5>
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4">
-                        <div class="curriculum-feature">
-                            <img src="assets/images/s3-icon-1.svg" alt="Course Length">
-                            <div>
-                                <h5>
-                                    Course Length
-                                </h5>
-                                <p>
-                                    12 weeks
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="curriculum-feature">
-                            <img src="assets/images/s3-icon-2.svg" alt="Tuition Fee">
-                            <div>
-                                <h5>
-                                    Tuition Fee
-                                </h5>
-                                <p>
-                                    $350 or 40,000 ksh
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <div class="curriculum-feature">
-                            <img src="assets/images/s3-icon-3.svg" alt="Mode of Delivery">
-                            <div>
-                                <h5>
-                                    Mode of Delivery
-                                </h5>
-                                <p>
-                                    Online
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="curriculum-feature">
-                            <img src="assets/images/s3-icon-4.svg" alt="Start date">
-                            <div>
-                                <h5>
-                                    Start date
-                                </h5>
-                                <p>
-                                    2nd September 2024
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="btns-wrapper">
-                    <a href="https://www.jotform.com/242013106713542" class="btn btn-primary mb-lg-5">Apply now!</a>
-                    <!-- <a href="https://www.dropbox.com/s/r1wm5l9zh18hmai/Africa%20Data%20School.pdf?dl=0" class="btn btn-primary inverted">Download Syllabus</a> -->
-                </div>
-            </div>
+<!-- CTA Section -->
+<!-- CTA Section -->
+<section class="cta-section" id="cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Secure Your Spot Today!</h2>
+      <p>
+        The next cohort starts soon, and seats are filling up quickly across
+        our 20+ country locations. Join 1000+ successful graduates who've
+        transformed their careers.
+      </p>
+
+      <div class="countdown">
+        <h3>Next Cohort Starts In:</h3>
+        <div class="timer">
+          <div class="timer-item">
+            <span class="number">14</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="timer-item">
+            <span class="number">22</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="timer-item">
+            <span class="number">45</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="timer-item">
+            <span class="number">12</span>
+            <span class="label">Seconds</span>
+          </div>
         </div>
+      </div>
+
+      <a href="https://www.jotform.com/250631381604551" class="big-cta-button"
+        >Apply Now (Limited Spots Available)</a
+      >
     </div>
+  </div>
 </section>
 
-<section class="target">
-    <div class="container">
-        <h5 class="small-heading mb-5">
-            Who is this program for
-        </h5>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-lg-12 mb-5">
-                        <div class="target-feature">
-                            <img src="assets/images/s4-icon-1.svg" alt="Beginners looking to kick start their career in ML & AI">
-                            <div>
-                                <h5>
-                                    Beginners looking to kick start their career in ML & AI
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 mb-5">
-                        <div class="target-feature">
-                            <img src="assets/images/s4-icon-2.svg" alt="Data Analyst in the industry looking to up skill">
-                            <div>
-                                <h5>
-                                    Data Analyst in the industry looking to up skill
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 mb-5 mb-lg-0">
-                        <div class="target-feature">
-                            <img src="assets/images/s4-icon-3.svg" alt="Working professionals looking for career transition into ML & AI">
-                            <div>
-                                <h5>
-                                    Working professionals looking for career transition into ML & AI
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 position-relative">
-                <div class="feature-bg"></div>
-                <div class="d-flex align-items-center h-100">
-                    <div>
-                        <h5 class="small-heading mb-5">
-                            What you will learn?
-                        </h5>
-                        <div class="target-small-features-wrapper">
-                            <div class="feature">
-                                Foundations of Data Science using Python
-                            </div>
-                            <div class="feature">
-                                Data Analysis & Data visualization
-                            </div>
-                            <div class="feature">
-                                Machine learning & Deep learning
-                            </div>
-                            <div class="feature">
-                                NLP & Big data basics
-                            </div>
-                            <div class="feature">
-                                Microsoft AI Engineer Associate
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Simple JavaScript for the countdown timer -->
+<script>
+  // Set the countdown date (14 days from now)
+  const countdownDate = new Date();
+  countdownDate.setDate(countdownDate.getDate() + 28);
 
-<section class="courses-join-online-session">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start mb-5 mb-md-0">
-                <h5 class="big-heading mb-2">
-                    Become a Data Scientist in 12 weeks
-                </h5>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <div class="btns-wrapper">
-                    <a href="https://www.jotform.com/242013106713542" class="btn btn-primary light-bg-hover">Apply now!</a>
-                    <!-- <a href="https://www.dropbox.com/s/r1wm5l9zh18hmai/Africa%20Data%20School.pdf?dl=0" class="btn btn-primary inverted">Download Syllabus</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  // Update the countdown every second
+  const timerInterval = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
 
-<section class="courses-section">
-    <div class="container text-center">
-        <h6 class="big-subtitle mb-4">Awesome Courses</h6>
-        <h5 class="big-heading mb-5 mw-800">
-            Programming Tools ,Languages & Libraries Covered
-        </h5>
-        <div class="swiper-container courses-slider">
-            <div class="swiper-wrapper d-flex align-items-center">
-                <div class="swiper-slide">
-                    <img src="assets/images/logo-1.svg" alt="Microsoft Azure" class="course-slider-item">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/logo-2.svg" alt="Keras" class="course-slider-item">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/logo-3.svg" alt="TensorFlow" class="course-slider-item">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/logo-4.svg" alt="Python" class="course-slider-item">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/logo-5.svg" alt="spaCY" class="course-slider-item">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    // Calculate days, hours, minutes and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-<section class="learning-outcomes">
-    <div class="container text-center">
-        <h6 class="big-subtitle mb-4">Learning Outcomes</h6>
-        <h5 class="big-heading mb-5">
-            Learning Outcomes you could be
-        </h5>
+    // Display the results
+    document.querySelector(".timer-item:nth-child(1) .number").textContent =
+      days;
+    document.querySelector(".timer-item:nth-child(2) .number").textContent =
+      hours;
+    document.querySelector(".timer-item:nth-child(3) .number").textContent =
+      minutes;
+    document.querySelector(".timer-item:nth-child(4) .number").textContent =
+      seconds;
 
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="outcome-item down">
-                    <img src="assets/images/Data%20Analytic%20Consultant-icon.svg" alt="Data Analytic Consultant">
-                    <h5>Data Analytic Consultant</h5>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="outcome-item">
-                    <img src="assets/images/AI%20startup%20Founder-icon.svg" alt="AI startup Founder">
-                    <h5>AI startup Founder</h5>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="outcome-item down">
-                    <img src="assets/images/Data%20Scientist-icon.svg" alt="Data Scientist">
-                    <h5>Data Scientist</h5>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="outcome-item down">
-                    <img src="assets/images/NLP%20Engineer-icon.svg" alt="NLP Engineer">
-                    <h5>NLP Engineer</h5>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="outcome-item">
-                    <img src="assets/images/AI%20Engineer-icon.svg" alt="AI Engineer">
-                    <h5>AI Engineer</h5>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="outcome-item down">
-                    <img src="assets/images/Data%20Analyst-icon.svg" alt="Data Analyst">
-                    <h5>Data Analyst</h5>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 offset-md-3 offset-lg-4">
-                <div class="outcome-item">
-                    <img src="assets/images/Machine%20Learning%20Engineer%20-icon.svg" alt="Machine Learning Engineer">
-                    <h5>Machine Learning Engineer</h5>
-                </div>
-            </div>
-        </div>
+    // If the countdown is finished, clear the interval
+    if (distance < 0) {
+      clearInterval(timerInterval);
+    }
+  }, 1000);
+</script>
 
-    </div>
-</section>
+<!-- Add this JavaScript at the end of your body tag -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the menu toggle button and the navigation
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    
+    // Add click event listener to the menu toggle
+    menuToggle.addEventListener('click', function() {
+      // Toggle active class on menu toggle and navigation
+      menuToggle.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on navigation links
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        menuToggle.classList.remove('active');
+        nav.classList.remove('active');
+      });
+    });
+  });
+</script>
 
-<section class="application-process">
-    <div class="container text-center">
-        <h6 class="big-subtitle mb-4">Apply for courses</h6>
-        <h5 class="big-heading mb-5">
-            Application Process
-        </h5>
 
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="process-item">
-                    <div class="step-count">
-                        1
-                    </div>
-                    <h5>Step 1 : Fill the application form</h5>
-                    <a href="https://www.jotform.com/242013106713542">Apply by filling a simple form</a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="process-item">
-                    <div class="step-count">
-                        2
-                    </div>
-                    <h5>Step 2 : Screening Process</h5>
-                    <p>
-                        Candidates selected for admission will be contacted individually via the email
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="process-item">
-                    <div class="step-count">
-                        3
-                    </div>
-                    <h5>Step 3 : Join Program</h5>
-                    <p>
-                        An offer letter will be rolled out to the select few candidates. Secure your seat by paying the course fee.
-                    </p>
-                </div>
-            </div>
-        </div>
 
-    </div>
-</section>
 
-<section class="become-data-scientist">
-    <div class="container text-center">
-        <h5 class="big-heading mb-5">
-            Become a Data Scientist in 12 weeks
-        </h5>
-        <div>
-            <a href="https://www.jotform.com/242013106713542" class="btn btn-primary light-bg-hover me-lg-2 mb-2">Apply now!</a>
-            <!-- <a href="https://www.dropbox.com/s/r1wm5l9zh18hmai/Africa%20Data%20School.pdf?dl=0" class="btn btn-primary inverted mb-2">Download Syllabus</a> -->
-        </div>
-    </div>
-</section>
 
-<footer>
-    <div class="container">
-        <div class="footer-links">
-            <div class="row">
-                <div class="col-lg-3 mb-5 text-center text-lg-start">
-                    <a href="#" class="footer-logo">
-                        <img src="assets/images/logo.svg" alt="" class="mx-auto"/>
-                    </a>
-                    <a href="https://www.jotform.com/241753683319564" class="btn btn-primary inverted w-100">Apply now in 3 minutes</a>
-                    <p class="mt-4">
-                        &copy; All Right Reserved 2024, Africa Data School
-                    </p>
-                </div>
-                <div class="col-lg-8 offset-lg-1">
-                    <div class="row">
-                        <div class="col-md-6 mb-5 mb-md-0">
-                            <h5>Contact us</h5>
-                            <a href="tel:+254-748-366-631" class="footer-link">+254-748-366-631</a>
-                            <a href="mailto:admissions@africadataschool.com" class="footer-link">admissions@africadataschool.com</a>
-                        </div>
-                        <div class="col-md-6 mb-5 mb-md-0">
-              <h5>Data Science Available in 20+ countries</h5>
-              <!-- <a href="courses.html" class="footer-link">Immersive 12 Week data Science course(English)</a>
-              <a href="https://fr.africadataschool.com" class="footer-link">Immersive 12 Week data Science course(French)</a> -->
-              <!-- <a href ="dataanalysis.html" class="footer-link">Immersive 5 Week data analysis course</a> -->
-              Kenya, Uganda, Zambia, Zimbabwe, South Africa, Burundi, South Sudan, Tanzania, Ghana, Nigeria
-            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="js/courses.js"></script>
 
 </body>
 </html>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">Students Trained</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Available Countries</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Africa Data School</h3>
+            <p>
+              Empowering data science excellence through hands-on learning
+              across Africa.
+            </p>
+            <p>
+              1000 students from 20 African countries have transformed their
+              careers with our programs.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">FB</a>
+              <a href="#" class="social-link">TW</a>
+              <a href="#" class="social-link">IG</a>
+              <a href="#" class="social-link">LI</a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#features">Why Choose Us</a></li>
+              <li><a href="#courses">Curriculum</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#testimonials">Success Stories</a></li>
+            
+
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Locations</h3>
+            <ul class="footer-links">
+              <li>East Africa Hub: Nairobi, Kenya</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Apply Now</h3>
+            <p></p>
+            <a href="https://www.jotform.com/250631381604551" class="cta-button">Enroll Now</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Africa Data School. All rights reserved. Available in
+            20+ countries across Africa.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</section>
