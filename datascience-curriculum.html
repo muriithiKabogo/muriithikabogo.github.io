@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,182 +41,182 @@
 
 
 
-     /* Header and navigation */
-     header {
-    background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
-    color: white;
-    padding: 1.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-  }
-
-  .logo span {
-    color: #ffce00;
-  }
-
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-
-  nav ul li {
-    margin-left: 2rem;
-  }
-
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-
-  nav ul li a:hover {
-    color: #ffce00;
-  }
-
-  .cta-button {
-    background-color: #ffce00;
-    color: #0a2e63;
-    padding: 0.7rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s;
-  }
-
-  .cta-button:hover {
-    background-color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Mobile menu toggle */
-  .menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-    z-index: 200;
-  }
-
-  .menu-toggle span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-  }
-
-  /* Responsive styles */
-   /* Responsive styles */
-    /* Responsive styles */
-    @media (max-width: 992px) {
-    nav ul li {
-      margin-left: 1.5rem;
+    /* Header and navigation */
+    header {
+      background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+      color: white;
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-  }
 
-  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
     .header-content {
-      flex-direction: row;
+      display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    
-    .menu-toggle {
-      display: flex;
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
     }
 
-    .menu-toggle.active span:nth-child(1) {
-      transform: translateY(9px) rotate(45deg);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-      transform: translateY(-9px) rotate(-45deg);
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 80%;
-      max-width: 300px;
-      height: 100vh;
-      background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
-      padding: 80px 20px 20px;
-      transition: right 0.3s ease;
-      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-      z-index: 99;
-    }
-
-
-    nav.active {
-      right: 0;
+    .logo span {
+      color: #ffce00;
     }
 
     nav ul {
-      flex-direction: column;
-      align-items: flex-start;
+      display: flex;
+      list-style: none;
     }
 
     nav ul li {
-      margin: 0 0 1.5rem 0;
-      width: 100%;
+      margin-left: 2rem;
     }
 
     nav ul li a {
-      display: block;
-      font-size: 1.1rem;
-      padding: 0.5rem 0;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
     }
 
-    nav ul li:last-child {
-      margin-top: 1rem;
+    nav ul li a:hover {
+      color: #ffce00;
     }
 
-    nav ul li .cta-button {
+    .cta-button {
+      background-color: #ffce00;
+      color: #0a2e63;
+      padding: 0.7rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Mobile menu toggle */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+      z-index: 200;
+    }
+
+    .menu-toggle span {
       display: block;
-      text-align: center;
+      height: 3px;
       width: 100%;
+      background-color: white;
+      border-radius: 3px;
+      transition: all 0.3s ease;
     }
-  }
 
-  @media (max-width: 480px) {
-    .logo {
-      font-size: 1.5rem;
+    /* Responsive styles */
+    /* Responsive styles */
+    /* Responsive styles */
+    @media (max-width: 992px) {
+      nav ul li {
+        margin-left: 1.5rem;
+      }
     }
-  }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+      }
+
+      .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+      }
+
+
+      nav.active {
+        right: 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul li {
+        margin: 0 0 1.5rem 0;
+        width: 100%;
+      }
+
+      nav ul li a {
+        display: block;
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+      }
+
+      nav ul li:last-child {
+        margin-top: 1rem;
+      }
+
+      nav ul li .cta-button {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 1.5rem;
+      }
+    }
 
 
 
@@ -396,161 +397,161 @@
 
 
     .cta-section {
-    padding: 5rem 0;
-    text-align: center;
-    background-color: white;
-}
+      padding: 5rem 0;
+      text-align: center;
+      background-color: white;
+    }
 
-.cta-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
+    .cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-.cta-content h2 {
-    font-size: 2.5rem;
-    color: #0a2e63;
-    margin-bottom: 1.5rem;
-}
+    .cta-content h2 {
+      font-size: 2.5rem;
+      color: #0a2e63;
+      margin-bottom: 1.5rem;
+    }
 
-.cta-content p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 2rem;
-}
+    .cta-content p {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
 
-.countdown {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    display: inline-block;
-    width: 100%;
-    max-width: 500px;
-}
-
-.countdown h3 {
-    margin-bottom: 1rem;
-    color: #0a2e63;
-}
-
-.timer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.timer-item {
-    background-color: #0a2e63;
-    color: white;
-    padding: 0.8rem;
-    border-radius: 10px;
-    min-width: 70px;
-    flex: 1;
-    max-width: 90px;
-}
-
-.timer-item .number {
-    font-size: 1.8rem;
-    font-weight: 700;
-    display: block;
-}
-
-.timer-item .label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-}
-
-.big-cta-button {
-    display: inline-block;
-    background-color: #ffce00;
-    color: #0a2e63;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s;
-    width: 100%;
-    max-width: 400px;
-}
-
-.big-cta-button:hover {
-    background-color: #0a2e63;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive styles for the timer */
-/* Responsive styles for the timer */
-@media (max-width: 768px) {
     .countdown {
-        padding: 1.5rem 1rem;
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      display: inline-block;
+      width: 100%;
+      max-width: 500px;
     }
-    
+
+    .countdown h3 {
+      margin-bottom: 1rem;
+      color: #0a2e63;
+    }
+
     .timer {
-        gap: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
-    
+
     .timer-item {
+      background-color: #0a2e63;
+      color: white;
+      padding: 0.8rem;
+      border-radius: 10px;
+      min-width: 70px;
+      flex: 1;
+      max-width: 90px;
+    }
+
+    .timer-item .number {
+      font-size: 1.8rem;
+      font-weight: 700;
+      display: block;
+    }
+
+    .timer-item .label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .big-cta-button {
+      display: inline-block;
+      background-color: #ffce00;
+      color: #0a2e63;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .big-cta-button:hover {
+      background-color: #0a2e63;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive styles for the timer */
+    /* Responsive styles for the timer */
+    @media (max-width: 768px) {
+      .countdown {
+        padding: 1.5rem 1rem;
+      }
+
+      .timer {
+        gap: 0.5rem;
+      }
+
+      .timer-item {
         min-width: 60px;
         padding: 0.6rem;
         max-width: 70px;
-    }
-    
-    .timer-item .number {
+      }
+
+      .timer-item .number {
         font-size: 1.5rem;
-    }
-    
-    .timer-item .label {
+      }
+
+      .timer-item .label {
         font-size: 0.7rem;
-    }
-    
-    .cta-content h2 {
+      }
+
+      .cta-content h2 {
         font-size: 2rem;
-    }
-    
-    .big-cta-button {
+      }
+
+      .big-cta-button {
         padding: 0.8rem 1.5rem;
         font-size: 1.1rem;
+      }
     }
-}
 
-@media (max-width: 480px) {
-    .timer {
+    @media (max-width: 480px) {
+      .timer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.8rem;
         width: 100%;
-    }
-    
-    .timer-item {
+      }
+
+      .timer-item {
         min-width: unset;
         max-width: unset;
         width: 100%;
-    }
-    
-    .timer-item .number {
+      }
+
+      .timer-item .number {
         font-size: 1.8rem;
-    }
-    
-    .timer-item .label {
+      }
+
+      .timer-item .label {
         font-size: 0.7rem;
-    }
-    
-    .countdown {
+      }
+
+      .countdown {
         width: 90%;
         padding: 1.2rem 0.8rem;
+      }
     }
-}
 
 
 
 
 
 
-   
+
 
     @media (max-width: 768px) {
       .header-content {
@@ -583,12 +584,13 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Header -->
-   <!-- Header -->
+  <!-- Header -->
 
-   <!-- Header -->
-   <header>
+  <!-- Header -->
+  <header>
     <div class="container">
       <div class="header-content">
         <a href="#" class="logo">Africa <span>Data School</span></a>
@@ -603,7 +605,7 @@
             <li><a href="index.html#courses">Courses</a></li>
             <li><a href="index.html#projects">Projects</a></li>
             <li><a href="index.html#testimonials">Success Stories</a></li> -->
-            <li><a href="https://apply.africadataschool.com/f/f0ygb8gdj8" class="cta-button">Enroll Now</a></li>
+            <li><a href="https://apply.africadataschool.com/f/u5evtr6rjv" class="cta-button">Enroll Now</a></li>
           </ul>
         </nav>
       </div>
@@ -628,7 +630,8 @@
     <div class="container">
       <div class="section-heading">
         <h2>Master the Full Data Science Stack</h2>
-        <p>Our curriculum is designed to give you practical, job-ready skills through real-world projects that employers value.</p>
+        <p>Our curriculum is designed to give you practical, job-ready skills through real-world projects that employers
+          value.</p>
       </div>
 
       <div class="curriculum-grid">
@@ -892,431 +895,424 @@
 
         <!-- Interactive Data Visualization -->
         <div class="curriculum-card">
-            <div class="curriculum-header">
-              <div class="curriculum-icon">
-                <i class="fas fa-chart-area"></i>
-              </div>
-              <div class="curriculum-title">
-                <h3>Interactive Data Visualization</h3>
-                <p>Deliver powerful visuals and insights</p>
-              </div>
+          <div class="curriculum-header">
+            <div class="curriculum-icon">
+              <i class="fas fa-chart-area"></i>
             </div>
-            <div class="curriculum-body">
-              <div class="tools-section">
-                <h4><i class="fas fa-tools"></i> Tools</h4>
-                <div class="tools-list">
-                  <span class="tool-tag"><i class="fas fa-chart-pie"></i> Plotly</span>
-                </div>
-              </div>
-              <div class="projects-section">
-                <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
-                <div class="projects-list">
-                  <div class="project-item">
-                    <p>Stock Market Dashboard</p>
-                  </div>
-                  <div class="project-item">
-                    <p>COVID-19 Analysis</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Website Traffic Analysis</p>
-                  </div>
-                </div>
-              </div>
+            <div class="curriculum-title">
+              <h3>Interactive Data Visualization</h3>
+              <p>Deliver powerful visuals and insights</p>
             </div>
           </div>
-  
-          <!-- Maps & Geospatial Data -->
-          <div class="curriculum-card">
-            <div class="curriculum-header">
-              <div class="curriculum-icon">
-                <i class="fas fa-map-marked-alt"></i>
-              </div>
-              <div class="curriculum-title">
-                <h3>Maps & Geospatial Data</h3>
-                <p>Make smarter decisions with location-based insights</p>
+          <div class="curriculum-body">
+            <div class="tools-section">
+              <h4><i class="fas fa-tools"></i> Tools</h4>
+              <div class="tools-list">
+                <span class="tool-tag"><i class="fas fa-chart-pie"></i> Plotly</span>
               </div>
             </div>
-            <div class="curriculum-body">
-              <div class="tools-section">
-                <h4><i class="fas fa-tools"></i> Tools</h4>
-                <div class="tools-list">
-                  <span class="tool-tag"><i class="fas fa-map"></i> Folium</span>
+            <div class="projects-section">
+              <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
+              <div class="projects-list">
+                <div class="project-item">
+                  <p>Stock Market Dashboard</p>
+                </div>
+                <div class="project-item">
+                  <p>COVID-19 Analysis</p>
+                </div>
+                <div class="project-item">
+                  <p>Website Traffic Analysis</p>
                 </div>
               </div>
-              <div class="projects-section">
-                <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
-                <div class="projects-list">
-                  <div class="project-item">
-                    <p>Plotting Crime Data</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Visualizing Real Estate Data</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Creating a Travel Itinerary Map</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Build Data Apps -->
-          <div class="curriculum-card">
-            <div class="curriculum-header">
-              <div class="curriculum-icon">
-                <i class="fas fa-desktop"></i>
-              </div>
-              <div class="curriculum-title">
-                <h3>Build Data Apps</h3>
-                <p>Create sleek, interactive data apps that impress</p>
-              </div>
-            </div>
-            <div class="curriculum-body">
-              <div class="tools-section">
-                <h4><i class="fas fa-tools"></i> Tools</h4>
-                <div class="tools-list">
-                  <span class="tool-tag"><i class="fas fa-stream"></i> Streamlit</span>
-                </div>
-              </div>
-              <div class="projects-section">
-                <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
-                <div class="projects-list">
-                  <div class="project-item">
-                    <p>Data Explorer App</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Dashboard for Financial Data</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Personal Expense Tracker App</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Machine Learning -->
-          <div class="curriculum-card">
-            <div class="curriculum-header">
-              <div class="curriculum-icon">
-                <i class="fas fa-brain"></i>
-              </div>
-              <div class="curriculum-title">
-                <h3>Machine Learning</h3>
-                <p>Create predictive models that solve real problems</p>
-              </div>
-            </div>
-            <div class="curriculum-body">
-              <div class="tools-section">
-                <h4><i class="fas fa-tools"></i> Tools</h4>
-                <div class="tools-list">
-                  <span class="tool-tag"><i class="fas fa-cogs"></i> Scikit-learn</span>
-                  <span class="tool-tag"><i class="fas fa-chart-line"></i> Statsmodels</span>
-                </div>
-              </div>
-              <div class="projects-section">
-                <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
-                <div class="projects-list">
-                  <div class="project-item">
-                    <p>Real Estate Price Predictor</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Customer Churn Analysis</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Email Spam Detector</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Sales Forecasting</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Customer Segmentation</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Product Review Sentiment</p>
-                  </div>
-                  <div class="project-item">
-                    <p>S&P 500 Price Predictor</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-            <!-- Deep Learning -->
-        <div class="curriculum-card">
-            <div class="curriculum-header">
-              <div class="curriculum-icon">
-                <i class="fas fa-network-wired"></i>
-              </div>
-              <div class="curriculum-title">
-                <h3>Deep Learning</h3>
-                <p>Harness neural networks to solve complex problems</p>
-              </div>
-            </div>
-            <div class="curriculum-body">
-              <div class="tools-section">
-                <h4><i class="fas fa-tools"></i> Tools</h4>
-                <div class="tools-list">
-                  <span class="tool-tag"><i class="fab fa-tensorflow"></i> TensorFlow</span>
-                  <span class="tool-tag"><i class="fas fa-balance-scale"></i> Weights & Biases</span>
-                </div>
-              </div>
-              <div class="projects-section">
-                <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
-                <div class="projects-list">
-                  <div class="project-item">
-                    <p>Predicting Housing Prices</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Diabetes Prediction</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Plant Disease Classification</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Stock Price Prediction</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Sentiment Analysis</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Generative AI -->
-          <div class="curriculum-card">
-            <div class="curriculum-header">
-              <div class="curriculum-icon">
-                <i class="fas fa-robot"></i>
-              </div>
-              <div class="curriculum-title">
-                <h3>Generative AI</h3>
-                <p>Create new content like text, images, videos, and music</p>
-              </div>
-            </div>
-            <div class="curriculum-body">
-              <div class="tools-section">
-                <h4><i class="fas fa-tools"></i> Tools</h4>
-                <div class="tools-list">
-                  <span class="tool-tag"><i class="fas fa-smile"></i> Hugging Face</span>
-                  <span class="tool-tag"><i class="fab fa-google"></i> Google Colab</span>
-                </div>
-              </div>
-              <div class="projects-section">
-                <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
-                <div class="projects-list">
-                  <div class="project-item">
-                    <p>Text Generation with GPT-2</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Sentiment Analysis with DistilBERT</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Image Generation with Stable Diffusion</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Fine-tuning GPT-2</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Build AI Apps -->
-          <div class="curriculum-card">
-            <div class="curriculum-header">
-              <div class="curriculum-icon">
-                <i class="fas fa-cogs"></i>
-              </div>
-              <div class="curriculum-title">
-                <h3>Build AI Apps</h3>
-                <p>Develop applications that reason and assist</p>
-              </div>
-            </div>
-            <div class="curriculum-body">
-              <div class="tools-section">
-                <h4><i class="fas fa-tools"></i> Tools</h4>
-                <div class="tools-list">
-                  <span class="tool-tag"><i class="fas fa-link"></i> LangChain</span>
-                  <span class="tool-tag"><i class="fas fa-brain"></i> OpenAI</span>
-                </div>
-              </div>
-              <div class="projects-section">
-                <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
-                <div class="projects-list">
-                  <div class="project-item">
-                    <p>Building a Personal Knowledge Base</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Creating a Customer Support Bot</p>
-                  </div>
-                  <div class="project-item">
-                    <p>Data Analysis Assistant</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-
-  <!-- CTA Section -->
-<section class="cta-section" id="cta">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Secure Your Spot Today!</h2>
-        <p>
-          The next cohort starts soon, and seats are filling up quickly across
-          our 20+ country locations. Join 1000+ successful graduates who've
-          transformed their careers.
-        </p>
-  
-        <div class="countdown">
-          <h3>Next Cohort Starts In:</h3>
-          <div class="timer">
-            <div class="timer-item">
-              <span class="number">14</span>
-              <span class="label">Days</span>
-            </div>
-            <div class="timer-item">
-              <span class="number">22</span>
-              <span class="label">Hours</span>
-            </div>
-            <div class="timer-item">
-              <span class="number">45</span>
-              <span class="label">Minutes</span>
-            </div>
-            <div class="timer-item">
-              <span class="number">12</span>
-              <span class="label">Seconds</span>
             </div>
           </div>
         </div>
-  
-        <a href="https://apply.africadataschool.com/f/f0ygb8gdj8" class="big-cta-button"
-          >Apply Now (Limited Spots Available)</a
-        >
+
+        <!-- Maps & Geospatial Data -->
+        <div class="curriculum-card">
+          <div class="curriculum-header">
+            <div class="curriculum-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="curriculum-title">
+              <h3>Maps & Geospatial Data</h3>
+              <p>Make smarter decisions with location-based insights</p>
+            </div>
+          </div>
+          <div class="curriculum-body">
+            <div class="tools-section">
+              <h4><i class="fas fa-tools"></i> Tools</h4>
+              <div class="tools-list">
+                <span class="tool-tag"><i class="fas fa-map"></i> Folium</span>
+              </div>
+            </div>
+            <div class="projects-section">
+              <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
+              <div class="projects-list">
+                <div class="project-item">
+                  <p>Plotting Crime Data</p>
+                </div>
+                <div class="project-item">
+                  <p>Visualizing Real Estate Data</p>
+                </div>
+                <div class="project-item">
+                  <p>Creating a Travel Itinerary Map</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Build Data Apps -->
+        <div class="curriculum-card">
+          <div class="curriculum-header">
+            <div class="curriculum-icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="curriculum-title">
+              <h3>Build Data Apps</h3>
+              <p>Create sleek, interactive data apps that impress</p>
+            </div>
+          </div>
+          <div class="curriculum-body">
+            <div class="tools-section">
+              <h4><i class="fas fa-tools"></i> Tools</h4>
+              <div class="tools-list">
+                <span class="tool-tag"><i class="fas fa-stream"></i> Streamlit</span>
+              </div>
+            </div>
+            <div class="projects-section">
+              <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
+              <div class="projects-list">
+                <div class="project-item">
+                  <p>Data Explorer App</p>
+                </div>
+                <div class="project-item">
+                  <p>Dashboard for Financial Data</p>
+                </div>
+                <div class="project-item">
+                  <p>Personal Expense Tracker App</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="curriculum-card">
+          <div class="curriculum-header">
+            <div class="curriculum-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="curriculum-title">
+              <h3>Machine Learning</h3>
+              <p>Create predictive models that solve real problems</p>
+            </div>
+          </div>
+          <div class="curriculum-body">
+            <div class="tools-section">
+              <h4><i class="fas fa-tools"></i> Tools</h4>
+              <div class="tools-list">
+                <span class="tool-tag"><i class="fas fa-cogs"></i> Scikit-learn</span>
+                <span class="tool-tag"><i class="fas fa-chart-line"></i> Statsmodels</span>
+              </div>
+            </div>
+            <div class="projects-section">
+              <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
+              <div class="projects-list">
+                <div class="project-item">
+                  <p>Real Estate Price Predictor</p>
+                </div>
+                <div class="project-item">
+                  <p>Customer Churn Analysis</p>
+                </div>
+                <div class="project-item">
+                  <p>Email Spam Detector</p>
+                </div>
+                <div class="project-item">
+                  <p>Sales Forecasting</p>
+                </div>
+                <div class="project-item">
+                  <p>Customer Segmentation</p>
+                </div>
+                <div class="project-item">
+                  <p>Product Review Sentiment</p>
+                </div>
+                <div class="project-item">
+                  <p>S&P 500 Price Predictor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Deep Learning -->
+        <div class="curriculum-card">
+          <div class="curriculum-header">
+            <div class="curriculum-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="curriculum-title">
+              <h3>Deep Learning</h3>
+              <p>Harness neural networks to solve complex problems</p>
+            </div>
+          </div>
+          <div class="curriculum-body">
+            <div class="tools-section">
+              <h4><i class="fas fa-tools"></i> Tools</h4>
+              <div class="tools-list">
+                <span class="tool-tag"><i class="fab fa-tensorflow"></i> TensorFlow</span>
+                <span class="tool-tag"><i class="fas fa-balance-scale"></i> Weights & Biases</span>
+              </div>
+            </div>
+            <div class="projects-section">
+              <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
+              <div class="projects-list">
+                <div class="project-item">
+                  <p>Predicting Housing Prices</p>
+                </div>
+                <div class="project-item">
+                  <p>Diabetes Prediction</p>
+                </div>
+                <div class="project-item">
+                  <p>Plant Disease Classification</p>
+                </div>
+                <div class="project-item">
+                  <p>Stock Price Prediction</p>
+                </div>
+                <div class="project-item">
+                  <p>Sentiment Analysis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Generative AI -->
+        <div class="curriculum-card">
+          <div class="curriculum-header">
+            <div class="curriculum-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="curriculum-title">
+              <h3>Generative AI</h3>
+              <p>Create new content like text, images, videos, and music</p>
+            </div>
+          </div>
+          <div class="curriculum-body">
+            <div class="tools-section">
+              <h4><i class="fas fa-tools"></i> Tools</h4>
+              <div class="tools-list">
+                <span class="tool-tag"><i class="fas fa-smile"></i> Hugging Face</span>
+                <span class="tool-tag"><i class="fab fa-google"></i> Google Colab</span>
+              </div>
+            </div>
+            <div class="projects-section">
+              <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
+              <div class="projects-list">
+                <div class="project-item">
+                  <p>Text Generation with GPT-2</p>
+                </div>
+                <div class="project-item">
+                  <p>Sentiment Analysis with DistilBERT</p>
+                </div>
+                <div class="project-item">
+                  <p>Image Generation with Stable Diffusion</p>
+                </div>
+                <div class="project-item">
+                  <p>Fine-tuning GPT-2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Build AI Apps -->
+        <div class="curriculum-card">
+          <div class="curriculum-header">
+            <div class="curriculum-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="curriculum-title">
+              <h3>Build AI Apps</h3>
+              <p>Develop applications that reason and assist</p>
+            </div>
+          </div>
+          <div class="curriculum-body">
+            <div class="tools-section">
+              <h4><i class="fas fa-tools"></i> Tools</h4>
+              <div class="tools-list">
+                <span class="tool-tag"><i class="fas fa-link"></i> LangChain</span>
+                <span class="tool-tag"><i class="fas fa-brain"></i> OpenAI</span>
+              </div>
+            </div>
+            <div class="projects-section">
+              <h4><i class="fas fa-project-diagram"></i> Real-Life Projects</h4>
+              <div class="projects-list">
+                <div class="project-item">
+                  <p>Building a Personal Knowledge Base</p>
+                </div>
+                <div class="project-item">
+                  <p>Creating a Customer Support Bot</p>
+                </div>
+                <div class="project-item">
+                  <p>Data Analysis Assistant</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
-  </section>
-  
-  <!-- Simple JavaScript for the countdown timer -->
-  <script>
-    // Set the countdown date (14 days from now)
-    const countdownDate = new Date();
-    countdownDate.setDate(countdownDate.getDate() + 28);
-  
-    // Update the countdown every second
-    const timerInterval = setInterval(function () {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-  
-      // Calculate days, hours, minutes and seconds
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-      // Display the results
-      document.querySelector(".timer-item:nth-child(1) .number").textContent =
-        days;
-      document.querySelector(".timer-item:nth-child(2) .number").textContent =
-        hours;
-      document.querySelector(".timer-item:nth-child(3) .number").textContent =
-        minutes;
-      document.querySelector(".timer-item:nth-child(4) .number").textContent =
-        seconds;
-  
-      // If the countdown is finished, clear the interval
-      if (distance < 0) {
-        clearInterval(timerInterval);
-      }
-    }, 1000);
-  </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
 
-<!-- Add this JavaScript at the end of your body tag -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Get the menu toggle button and the navigation
-      const menuToggle = document.querySelector('.menu-toggle');
-      const nav = document.querySelector('nav');
-      
-      // Add click event listener to the menu toggle
-      menuToggle.addEventListener('click', function() {
-        // Toggle active class on menu toggle and navigation
-        menuToggle.classList.toggle('active');
-        nav.classList.toggle('active');
-      });
-      
-      // Close menu when clicking on navigation links
-      const navLinks = document.querySelectorAll('nav ul li a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          menuToggle.classList.remove('active');
-          nav.classList.remove('active');
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Secure Your Spot Today!</h2>
+          <p>
+            The next cohort starts soon, and seats are filling up quickly across
+            our 20+ country locations. Join 1000+ successful graduates who've
+            transformed their careers.
+          </p>
+
+          <div class="countdown">
+            <h3>Next Cohort Starts In:</h3>
+            <div class="timer">
+              <div class="timer-item">
+                <span class="number">14</span>
+                <span class="label">Days</span>
+              </div>
+              <div class="timer-item">
+                <span class="number">22</span>
+                <span class="label">Hours</span>
+              </div>
+              <div class="timer-item">
+                <span class="number">45</span>
+                <span class="label">Minutes</span>
+              </div>
+              <div class="timer-item">
+                <span class="number">12</span>
+                <span class="label">Seconds</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://apply.africadataschool.com/f/u5evtr6rjv" class="big-cta-button">Apply Now (Limited Spots
+            Available)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple JavaScript for the countdown timer -->
+    <script>
+      // Set the countdown date (14 days from now)
+      const countdownDate = new Date();
+      countdownDate.setDate(countdownDate.getDate() + 28);
+
+      // Update the countdown every second
+      const timerInterval = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        // Calculate days, hours, minutes and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the results
+        document.querySelector(".timer-item:nth-child(1) .number").textContent =
+          days;
+        document.querySelector(".timer-item:nth-child(2) .number").textContent =
+          hours;
+        document.querySelector(".timer-item:nth-child(3) .number").textContent =
+          minutes;
+        document.querySelector(".timer-item:nth-child(4) .number").textContent =
+          seconds;
+
+        // If the countdown is finished, clear the interval
+        if (distance < 0) {
+          clearInterval(timerInterval);
+        }
+      }, 1000);
+    </script>
+
+
+    <!-- Add this JavaScript at the end of your body tag -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the menu toggle button and the navigation
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        // Add click event listener to the menu toggle
+        menuToggle.addEventListener('click', function () {
+          // Toggle active class on menu toggle and navigation
+          menuToggle.classList.toggle('active');
+          nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking on navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function () {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+          });
         });
       });
-    });
-  </script>
- 
-  
-
-  
-  
-      
+    </script>
