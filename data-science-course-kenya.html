@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Tags -->
+    <title>Data Science Course in Kenya (2026) | Learn Python, SQL & Machine Learning</title>
+    <meta name="description"
+        content="Looking for a Data Science Course in Kenya? Learn Python, SQL, and Machine Learning through hands-on projects and mentorship. Build job-ready data skills at Africa Data School. Apply now." />
+    <link rel="canonical" href="https://www.africadataschool.com/data-science-course-kenya.html" />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Data Science Course in Kenya",
+      "description": "Learn Data Science and Build Job-Ready Skills. Become a data professional by learning Python, SQL, analytics, and machine learning through hands-on projects and mentorship.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Africa Data School",
+        "sameAs": "https://www.africadataschool.com"
+      }
+    }
+  </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <style>
+        /* Reset and global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header and navigation */
+        header {
+            background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+            color: white;
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #ffce00;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffce00;
+        }
+
+        .cta-button {
+            background-color: #ffce00;
+            color: #0a2e63;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            color: #0a2e63;
+        }
+
+        /* Mobile menu toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            z-index: 200;
+        }
+
+        .menu-toggle span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero section */
+        .hero {
+            position: relative;
+            padding: 7rem 0 6rem;
+            background: linear-gradient(rgba(10, 46, 99, 0.92), rgba(10, 46, 99, 0.90)),
+                url('assets/images/banner-bg.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.1;
+            font-weight: 800;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h1 span {
+            color: #ffce00;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        /* Content Sections */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-bg-light {
+            background-color: #f9f9f9;
+        }
+
+        .section-bg-white {
+            background-color: white;
+        }
+
+        h2 {
+            color: #0a2e63;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h3 {
+            color: #0a2e63;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .text-block {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li::before {
+            content: "✔";
+            color: #ffce00;
+            font-weight: bold;
+            margin-right: 10px;
+            background: #0a2e63;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #0a2e63;
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a2e63;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 4rem 0 2rem;
+        }
+
+        footer h5 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+
+        footer a:hover {
+            color: #ffce00;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            /* Simplified for this specific page if needed, or implement toggle */
+            .menu-toggle {
+                display: flex;
+            }
+
+            .header-content {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Africa <span>Data School</span></a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="corporate.html">Corporate</a></li>
+                    <li><a href="hire.html">Hire Graduates</a></li>
+                    <li><a href="https://apply.africadataschool.com/f/u5evtr6rjv" class="cta-button">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Data Science Course in <span>Kenya</span></h1>
+            <p class="hero-subtitle">Learn Data Science and Build Job-Ready Skills</p>
+            <div class="hero-description">
+                <p>Become a data professional by learning Python, SQL, analytics, and machine learning through hands-on
+                    projects and mentorship at Africa Data School.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="https://apply.africadataschool.com/f/u5evtr6rjv" class="cta-button">Apply to the Next
+                    Cohort</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Why Learn Data Science?</h2>
+                    <div class="text-block" style="margin: 0;">
+                        <p class="mb-3">Data science is one of the fastest-growing careers globally. The U.S. Bureau of
+                            Labor Statistics projects 34% job growth for data scientists, far above average across
+                            professions.</p>
+                        <p class="mb-3">Organizations across banking, telecom, startups, and government increasingly
+                            rely on data to make decisions — creating strong demand for people who can analyze and
+                            interpret data.</p>
+                        <p>In Kenya, data science roles are among the highest-paying entry-level tech careers, with
+                            salaries often starting above KES 80,000 depending on skills and experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-card">
+                        <h3>What You’ll Learn</h3>
+                        <p class="mb-3">This course focuses on practical data science skills used in industry. You’ll
+                            learn how to:</p>
+                        <ul class="feature-list">
+                            <li>Analyze real datasets</li>
+                            <li>Write Python for data analysis</li>
+                            <li>Query databases using SQL</li>
+                            <li>Visualize insights</li>
+                            <li>Build machine learning models</li>
+                            <li>Present results clearly</li>
+                        </ul>
+                        <p class="mt-3"><strong>By the end of the program, you will have a portfolio of real
+                                projects.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg-light">
+        <div class="container">
+            <h2>Curriculum Overview</h2>
+            <p class="text-center mb-5">The program covers the core areas of modern data science designed to move
+                students from beginner to applied practitioner.</p>
+
+            <div class="card-grid">
+                <div class="info-card">
+                    <h3>Foundations</h3>
+                    <ul class="feature-list">
+                        <li>Python programming</li>
+                        <li>Statistics for data analysis</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Data Analysis</h3>
+                    <ul class="feature-list">
+                        <li>Data cleaning</li>
+                        <li>SQL</li>
+                        <li>Visualization</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Machine Learning</h3>
+                    <ul class="feature-list">
+                        <li>Predictive models</li>
+                        <li>Model evaluation</li>
+                        <li>Applied projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Who This Course Is For</h2>
+                    <p class="text-center mb-4">No prior programming experience is required.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <ul class="feature-list">
+                                <li>Graduates</li>
+                                <li>Analysts</li>
+                                <li>Developers</li>
+                                <li>Career switchers</li>
+                                <li>Professionals working with data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Career Outcomes</h2>
+                    <p class="text-center mb-4">Demand for data skills continues to grow globally as organizations adopt
+                        AI and analytics.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Industries</h3>
+                            <ul class="feature-list">
+                                <li>Finance</li>
+                                <li>Technology</li>
+                                <li>Insurance</li>
+                                <li>Logistics</li>
+                                <li>Government</li>
+                                <li>Startups</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Common Roles</h3>
+                            <ul class="feature-list">
+                                <li>Data Analyst</li>
+                                <li>BI Analyst</li>
+                                <li>Data Scientist</li>
+                                <li>Machine Learning Engineer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg-light">
+        <div class="container">
+            <h2>Why Africa Data School</h2>
+            <p class="text-center mb-5">The goal is to help students build practical skills they can use immediately.
+            </p>
+            <div class="card-grid">
+                <div class="info-card text-center">
+                    <h3>Hands-on Learning</h3>
+                    <p>We are practical! You code from day one.</p>
+                </div>
+                <div class="info-card text-center">
+                    <h3>Real Projects</h3>
+                    <p>Apply what you learn to real-world problems.</p>
+                </div>
+                <div class="info-card text-center">
+                    <h3>Mentorship</h3>
+                    <p>Get guidance from industry professionals.</p>
+                </div>
+                <div class="info-card text-center">
+                    <h3>Career-focused</h3>
+                    <p>Training designed to get you hired.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg-white text-center">
+        <div class="container">
+            <h2>Fees and Enrollment</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="info-card" style="border-top: 4px solid #ffce00;">
+                        <ul class="feature-list"
+                            style="display: inline-block; text-align: left; margin-bottom: 1.5rem;">
+                            <li><strong>Program Fee:</strong> KES 30,000</li>
+                            <li><strong>Duration:</strong> 8 weeks</li>
+                            <li><strong>Format:</strong> Online</li>
+                        </ul>
+                        <p class="mb-2">Payment options available.</p>
+                        <p class="fw-bold">Apply to join the next cohort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg-white text-center">
+        <div class="container">
+            <h2>Apply to the Next Cohort</h2>
+            <p class="text-block mb-4">Start your data science journey today. Apply now to secure your spot in the next
+                intake.</p>
+            <a href="https://apply.africadataschool.com/f/u5evtr6rjv" class="cta-button"
+                style="font-size: 1.2rem; padding: 1rem 2.5rem;">Apply Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <a href="index.html" class="logo">Africa <span>Data School</span></a>
+                    <p class="mt-3">&copy; 2026 Africa Data School. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>+254-748-366-631</p>
+                    <p>admissions@africadataschool.com</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Links</h5>
+                    <a href="courses.html">All Courses</a>
+                    <a href="corporate.html">Corporate Training</a>
+                    <a href="hire.html">Hire Graduates</a>
+                    <a href="https://apply.africadataschool.com/f/u5evtr6rjv">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mobile menu toggle script
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', function () {
+                    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+                    // Add simple animation/class logic if needed, but this is a basic toggle
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
