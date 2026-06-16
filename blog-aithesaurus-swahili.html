@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Why African-Language NLP Tooling Matters for Data Scientists | Africa Data School</title>
+  <meta name="description"
+    content="The tooling gap for Swahili and other African languages is one of the most interesting problem spaces in NLP today. Here's why it matters for data scientists in training — and one example tool worth a look." />
+
+  <meta property="og:title" content="Why African-Language NLP Tooling Matters for Data Scientists" />
+  <meta property="og:description"
+    content="Swahili and other African languages are underserved by mainstream writing and SEO tools. For data scientists, that gap is an opportunity." />
+  <meta property="og:type" content="article" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* Header and navigation (matches site pattern) */
+    header {
+      background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+      color: white;
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #ffce00;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 2rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffce00;
+    }
+
+    .cta-button {
+      background-color: #ffce00;
+      color: #0a2e63;
+      padding: 0.7rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+      z-index: 200;
+    }
+
+    .menu-toggle span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+      }
+
+      .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+      }
+
+      nav.active {
+        right: 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul li {
+        margin: 0 0 1.5rem 0;
+        width: 100%;
+      }
+    }
+
+    /* Article hero */
+    .article-hero {
+      background: linear-gradient(135deg, #0a2e63 0%, #1a6db2 100%);
+      color: white;
+      padding: 4rem 0 3rem;
+    }
+
+    .article-hero .badge-tag {
+      display: inline-block;
+      background-color: rgba(255, 206, 0, 0.9);
+      color: #0a2e63;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .article-hero h1 {
+      font-size: 2.6rem;
+      line-height: 1.2;
+      font-weight: 800;
+      max-width: 800px;
+      margin-bottom: 1rem;
+    }
+
+    .article-hero .byline {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.95rem;
+    }
+
+    /* Article body */
+    .article-body {
+      background: white;
+      max-width: 760px;
+      margin: -2rem auto 3rem;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .article-body h2 {
+      color: #0a2e63;
+      font-size: 1.6rem;
+      margin: 2.2rem 0 1rem;
+    }
+
+    .article-body p {
+      margin-bottom: 1.2rem;
+      color: #444;
+    }
+
+    .article-body a {
+      color: #1a6db2;
+      font-weight: 600;
+    }
+
+    .article-body ul {
+      margin: 0 0 1.2rem 1.4rem;
+      color: #444;
+    }
+
+    .article-body li {
+      margin-bottom: 0.6rem;
+    }
+
+    .article-cta {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background: #f4f8fc;
+      border-left: 4px solid #ffce00;
+      border-radius: 6px;
+    }
+
+    .article-cta a {
+      display: inline-block;
+      margin-top: 0.6rem;
+      background-color: #ffce00;
+      color: #0a2e63;
+      padding: 0.7rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* Footer (matches site pattern) */
+    footer {
+      background-color: #0a2e63;
+      color: white;
+      padding: 2.5rem 0 1.5rem;
+    }
+
+    footer h3 {
+      color: #ffce00;
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-bottom {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 768px) {
+      .article-hero h1 {
+        font-size: 2rem;
+      }
+
+      .article-body {
+        padding: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Africa <span>Data School</span></a>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="hire.html">Hire</a></li>
+            <li><a href="https://apply.africadataschool.com/f/u5evtr6rjv" class="cta-button">Enroll Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Hero -->
+  <section class="article-hero">
+    <div class="container">
+      <div class="badge-tag">NLP &amp; Language</div>
+      <h1>Why African-Language NLP Tooling Matters for Data Scientists</h1>
+      <p class="byline">Africa Data School</p>
+    </div>
+  </section>
+
+  <!-- Article Body -->
+  <article class="article-body">
+    <p>
+      Swahili is one of the most widely used languages in Africa and a working lingua franca across
+      Kenya, Tanzania, Uganda, and the eastern DRC. It is also one of the fastest-growing languages
+      online. Yet most of the writing and search tools our students reach for every day &mdash; thesauri,
+      keyword research platforms, grammar checkers &mdash; were built for English first, with European
+      languages a distant second. African languages are too often an afterthought.
+    </p>
+
+    <p>
+      We think that gap is worth paying attention to, because it sits right at the intersection of the
+      skills we teach: natural language processing, data analysis, and building things people in this
+      region actually need.
+    </p>
+
+    <h2>The tooling gap is a data problem</h2>
+
+    <p>
+      For anyone working on NLP with Swahili (or Hausa, or Yoruba, or Amharic) text, the practical
+      friction is real. Labelled training data is sparse. Pre-built models are limited. The lexical
+      resources that English-language practitioners take for granted &mdash; large synonym sets, sense
+      inventories, frequency lists &mdash; either don't exist in the same form or are scattered and
+      incomplete.
+    </p>
+
+    <p>
+      That's not just an inconvenience for content creators. It's a genuine open problem for data
+      scientists, and a good one to cut your teeth on. If you can build a clean dataset, train a usable
+      model, or even just assemble and document a quality lexical resource for an under-resourced
+      language, you've done something both technically instructive and genuinely useful.
+    </p>
+
+    <h2>Why it matters for our students</h2>
+
+    <ul>
+      <li>
+        <strong>It's a fast-growing market.</strong> Africa's internet population is expanding quickly,
+        and so is the volume of content produced in African languages. Professionals who can bridge AI,
+        language, and local context will be in demand.
+      </li>
+      <li>
+        <strong>It teaches transferable skills.</strong> Working with low-resource languages forces you
+        to get good at the unglamorous parts of data science &mdash; data collection, cleaning,
+        evaluation when benchmarks are thin &mdash; which are exactly the skills that carry over to any
+        applied ML role.
+      </li>
+      <li>
+        <strong>It's tractable for a portfolio project.</strong> Unlike chasing state-of-the-art on a
+        saturated English benchmark, a focused project on a local language is something you can actually
+        ship and explain in an interview.
+      </li>
+    </ul>
+
+    <h2>One tool worth a look</h2>
+
+    <p>
+      If you want to see what a language tool that treats African languages as first-class looks like,
+      one example we came across is
+      <a href="https://www.aithesaurus.io" target="_blank" rel="noopener">AIThesaurus.io</a>, a
+      multilingual thesaurus that includes a Swahili section and cross-language lookups. It's a useful
+      reference point for thinking about how synonym and translation data can be presented &mdash; and a
+      reminder that the space is still wide open. We'd suggest trying it, comparing it against whatever
+      resources you already use, and forming your own view. The interesting exercise, for a data
+      scientist, is asking <em>how</em> a tool like that is built and where it could be better.
+    </p>
+
+    <h2>The bigger picture</h2>
+
+    <p>
+      The shortage of good AI-powered tools for African languages isn't only a convenience problem
+      &mdash; it's an economic one. When creators and businesses working in Swahili or Hausa can't access
+      tooling on par with their English-speaking peers, they compete at a disadvantage. Closing that gap
+      is, in a real sense, infrastructure for the continent's digital economy.
+    </p>
+
+    <p>
+      That's the kind of problem we want our students thinking about: where AI, language, and emerging
+      markets meet. It's where a lot of the most impactful work of the next decade is going to happen,
+      and there's plenty of room for people who understand both the technology and the local context.
+    </p>
+
+    <div class="article-cta">
+      <strong>Want to work on problems like this?</strong>
+      <p>Africa Data School trains data scientists across 20+ African countries with practical,
+        industry-focused projects.</p>
+      <a href="https://apply.africadataschool.com/f/u5evtr6rjv" target="_blank" rel="noopener">Apply
+        now</a>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-column">
+          <h3>Africa Data School</h3>
+          <p>Empowering data science excellence through hands-on learning across Africa.</p>
+        </div>
+        <div class="col-md-4 footer-column">
+          <h3>Quick Links</h3>
+          <ul style="list-style:none; padding:0;">
+            <li><a href="index.html" style="color:rgba(255,255,255,0.85); text-decoration:none;">Home</a></li>
+            <li><a href="courses.html" style="color:rgba(255,255,255,0.85); text-decoration:none;">Courses</a></li>
+            <li><a href="hire.html" style="color:rgba(255,255,255,0.85); text-decoration:none;">Hire</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-column">
+          <h3>Our Locations</h3>
+          <p>East Africa Hub: Nairobi, Kenya</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Africa Data School. All rights reserved. Available in 20+ countries across Africa.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function () {
+          menuToggle.classList.toggle('active');
+          nav.classList.toggle('active');
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
